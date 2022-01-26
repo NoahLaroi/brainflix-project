@@ -1,10 +1,12 @@
+import uploadIcon from '../../assets/icons/upload.svg'
 function Uploader () {
     return (
         <div className='uploader'>
         <div className='uploaderContent'>
-<img src='../../assets/icons/upload.svg'/>
+<img src={uploadIcon} alt='upload icon'/>
         <p>UPLOAD</p>
         </div>    
         </div>
     )
-}
+};
+export default Uploader

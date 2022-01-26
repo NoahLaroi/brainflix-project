@@ -1,10 +1,12 @@
+import search from '../../assets/icons/search.svg'
 function SearchSection() {
     return (
         <div className='searchSection'>
+         <img src={search} alt ='maginfying glass'/>
         <div>
-            <input type='search' placeholder='Search'/>
+            <input className='searchBar' type='search' placeholder='Search'/>
         </div>
-            <img src='../../assets/images/Mohan-muruge.jpg'/>
         </div>
     )
 } 
+export default SearchSection

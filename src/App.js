@@ -1,26 +1,19 @@
-// import react from 'react'
-// import './App.css';
-// import '../src/components/Component/'
-
-// function App() {
-//     return ( <
-//         div className = "App" >
-//         <
-//         header className = "App-header" >
-//         <
-//         img src = .. / /> <
-//         p >
-//         Edit < code > src / App.js < /code> and save to reload. <
-//         /p> <
-//         a className = "App-link"
-//         href = "https://reactjs.org"
-//         target = "_blank"
-//         rel = "noopener noreferrer" >
-//         Learn React <
-//         /a> <
-//         /header> <
-//         /div>
-//     );
-// }
-
-// export default App;
+import LogoHeader from '../src/components/Component/Header'
+import SearchSection from '../src/components/Component/Search';
+import Uploader from '../src/components/Component/Uploader'
+import Video from '../src/components/Component/Video'
+import VideoDescription from './components/Component/Description';
+import './styles/App.css'
+// import'../src/components/Component/'
+function App() {
+  return (
+<>
+<LogoHeader/>
+<SearchSection/>
+<Uploader/>
+<Video/>
+<VideoDescription/>
+</>
+  );
+};
+export default App;
