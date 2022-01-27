@@ -4,6 +4,8 @@ function VideoDescription () {
     return (
         <section className='videoDescription'>
 <p>{videoDetails[0].title}</p>
+<hr/>
+<p>{videoDetails[0].description}</p>
         </section>
     )
 };
