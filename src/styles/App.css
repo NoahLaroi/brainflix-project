@@ -3,39 +3,36 @@ html {
   color: #323232;
 }
 
-.videoSection {
-  background-image: url("https://i.imgur.com/l2Xfgpl.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.videoSection .controls {
+.logoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #323232;
-  margin: 8px;
-  border-radius: 5px;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
 }
 
-.searchSection {
+.searchSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 80px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.searchSectionContainer .searchSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,10 +40,21 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border: solid 1px #afafaf;
+  width: 75%;
+  margin: 16px;
+  padding: 8px;
 }
-.searchSection .searchBar {
-  border: solid #AFAFAF 1px;
-  border-radius: 5px;
+.searchSectionContainer .searchSection .searchBar {
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.mojahed {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .uploader {
@@ -57,14 +65,15 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-color: #0095FF;
-  width: 150px;
+  background-color: #0095ff;
+  width: 75%;
   border-radius: 5px;
   height: 32px;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin: 0 auto;
 }
 .uploader .uploaderContent {
   display: -webkit-box;
@@ -81,4 +90,85 @@ html {
           justify-content: space-evenly;
   width: 75%;
   font-weight: 600;
+}
+
+.videoSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column wrap;
+          flex-direction: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 16px;
+}
+
+.bigContainer {
+  padding: 0 16px 0 16px;
+}
+
+.videoDisplay {
+  height: 100%;
+  width: 100%;
+}
+
+.videoTitle {
+  margin: 0 0 16px 0;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.videoInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  margin: 16px 0;
+}
+.videoInfo .dateAndAuthor {
+  width: 50%;
+}
+.videoInfo .dateAndAuthor .date {
+  margin: 0;
+}
+.videoInfo .dateAndAuthor .author {
+  margin: 0;
+}
+.videoInfo .viewsAndLikes {
+  width: 50%;
+}
+.videoInfo .viewContainer {
+  width: 100%;
+}
+.videoInfo .viewContainer .views {
+  width: 70%;
+  margin: 0 0 0 16px;
+  display: inline-block;
+}
+.videoInfo .likeContainer {
+  width: 100%;
+}
+.videoInfo .likeContainer .likes {
+  width: 70%;
+  margin: 0 0 0 16px;
+  display: inline-block;
+}
+
+.icon {
+  width: 16px;
+}
+
+.videoDescription {
+  padding: 0 16px 0 16px;
+}
+.videoDescription p {
+  margin: 0;
 }/*# sourceMappingURL=App.css.map */

@@ -1,34 +1,142 @@
 //Variables and Miscellaneous Stylistic Junk
 $Brain-Flix-Black: #323232;
 $Brain-Flix-Dark-Black: #000000;
-$Brain-Flix-Blue: #0095FF;
-$Brain-Flix-Dark-Blue: #0065AD;
-$Silver: #AFAFAF;
+$Brain-Flix-Blue: #0095ff;
+$Brain-Flix-Dark-Blue: #0065ad;
+$Silver: #afafaf;
 $Mercury: #e1e1e1;
-$White: #FFFFFF;
-$Alabaster: #FAFAFA;
+$White: #ffffff;
+$Alabaster: #fafafa;
 //Screen-Sizes
 $tablet-lower: 768px;
 
-html {font-family: AvenirNext;
+html {
+  font-family: AvenirNext;
   color: $Brain-Flix-Black;
 }
 //Component Styling
 
-//This is for the Header Elements
-.videoSection {
-  background-image: url("https://i.imgur.com/l2Xfgpl.jpg");
-  background-position: center; background-size: cover; width: 400px; height:300px; display: flex; flex-direction: column; justify-content: flex-end;
-.controls {
-    display: flex; flex-direction: row; justify-content: space-around; background-color: #323232; margin: 8px; border-radius: 5px;
+//Header Elements
+.logoContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 16px;
 }
-}
-.searchSection { display: flex; flex-direction: row; 
-    .searchBar {border: solid $Silver 1px; border-radius: 5px;} 
-}
-.uploader { display: flex; flex-flow: row wrap;
-    background-color: $Brain-Flix-Blue; width: 150px; border-radius: 5px; height: 32px; display: flex; align-content: center;
-    color: $White; .uploaderContent {
-        display: flex; flex-flow: row wrap; align-content: center; justify-content: space-evenly; width: 75%; font-weight: 600;
+.searchSectionContainer {
+  display: flex;
+  flex-flow: row wrap;
+  height: 80px;
+  align-content: center;
+  align-items: center;
+  .searchSection {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px $Silver;
+    width: 75%;
+    margin: 16px;
+    padding: 8px;
+    .searchBar {
+      border: none;
+      outline: none;
+      margin: 0;
     }
+  }
+}
+.mojahed {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.uploader {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $Brain-Flix-Blue;
+  width: 75%;
+  border-radius: 5px;
+  height: 32px;
+  display: flex;
+  align-content: center;
+  color: $White;
+  margin: 0 auto;
+  .uploaderContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 75%;
+    font-weight: 600;
+  }
+}
+
+//This is for the Header Elements
+// .videoSection {
+//   background-image: url("https://i.imgur.com/l2Xfgpl.jpg");
+//   background-position: center; background-size: cover; width: 400px; height:300px; display: flex; flex-direction: column; justify-content: flex-end;
+// .controls {
+//     display: flex; flex-direction: row; justify-content: space-around; background-color: #323232; margin: 8px; border-radius: 5px;
+// }
+// }
+
+//Video Display
+.videoSection {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 16px;
+}
+.bigContainer {
+  padding: 0 16px 0 16px;
+}
+.videoDisplay {
+  height: 100%;
+  width: 100%;
+}
+.videoTitle {
+  margin: 0 0 16px 0;
+  font-size: 16pt;
+  font-weight: 600;
+}
+.videoInfo {
+  display: flex;
+  flex-direction: row wrap;
+  margin: 16px 0;
+  .dateAndAuthor {
+    width: 50%;
+    .date {
+      margin: 0;
+    }
+    .author {
+      margin: 0;
+    }
+  }
+  .viewsAndLikes {
+    width: 50%;
+  }
+  .viewContainer {
+    width: 100%;
+    .views {
+      width: 70%;
+      margin: 0 0 0 16px;
+      display: inline-block;
+    }
+  }
+  .likeContainer {
+    width: 100%;
+    .likes {
+      width: 70%;
+      margin: 0 0 0 16px;
+      display: inline-block;
+    }
+  }
+}
+.icon {
+  width: 16px;
+}
+.videoDescription {
+  padding: 0 16px 0 16px;
+  p {
+    margin: 0;
+  }
 }
