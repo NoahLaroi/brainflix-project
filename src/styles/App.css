@@ -1,6 +1,7 @@
 html {
-  font-family: AvenirNext;
+  font-family: Avenir Next;
   color: #323232;
+  font-size: 13px;
 }
 
 .logoContainer {
@@ -31,6 +32,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .searchSectionContainer .searchSection {
   display: -webkit-box;
@@ -42,7 +46,7 @@ html {
           flex-direction: row;
   border: solid 1px #afafaf;
   width: 75%;
-  margin: 16px;
+  margin: 16px 0 16px 16px;
   padding: 8px;
 }
 .searchSectionContainer .searchSection .searchBar {
@@ -55,6 +59,7 @@ html {
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  margin: 8px;
 }
 
 .uploader {
@@ -118,8 +123,8 @@ html {
 }
 
 .videoTitle {
-  margin: 0 0 16px 0;
-  font-size: 16pt;
+  margin: 24px 0 16px 0;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -138,9 +143,11 @@ html {
 }
 .videoInfo .dateAndAuthor .date {
   margin: 0;
+  color: #afafaf;
 }
 .videoInfo .dateAndAuthor .author {
   margin: 0;
+  font-weight: 600;
 }
 .videoInfo .viewsAndLikes {
   width: 50%;
@@ -152,6 +159,7 @@ html {
   width: 70%;
   margin: 0 0 0 16px;
   display: inline-block;
+  color: #afafaf;
 }
 .videoInfo .likeContainer {
   width: 100%;
@@ -160,15 +168,113 @@ html {
   width: 70%;
   margin: 0 0 0 16px;
   display: inline-block;
+  color: #afafaf;
 }
 
 .icon {
   width: 16px;
 }
 
+.videoDescriptionSection {
+  margin: 16px;
+}
+
 .videoDescription {
-  padding: 0 16px 0 16px;
+  margin: 0;
+  text-align: justify;
 }
 .videoDescription p {
   margin: 0;
+}
+
+.amountOfComments {
+  margin: 16px 0;
+  font-weight: 700;
+}
+
+.newCommentSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px;
+}
+
+.newCommentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.newCommentSection form {
+  display: inline-block;
+  width: 80%;
+}
+
+label {
+  color: #afafaf;
+  margin: 16px 0;
+  size: 12px;
+  font-family: Avenir Next;
+}
+
+.imageContainer {
+  display: inline-block;
+  width: 20%;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.textBox {
+  width: 97.5%;
+  height: 100px;
+  font-family: Avenir Next;
+  border-color: #afafaf;
+  border-radius: 5px;
+}
+
+.commentButton {
+  background-image: url("../../src/assets/icons/add_comment.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 100%;
+  background-color: #0095ff;
+  color: #ffffff;
+  border: #0095ff;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  html {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=App.css.map */

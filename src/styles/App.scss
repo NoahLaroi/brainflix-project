@@ -9,10 +9,13 @@ $White: #ffffff;
 $Alabaster: #fafafa;
 //Screen-Sizes
 $tablet-lower: 768px;
+$tablet-higher: 1279px;
+$desktop-lower: 1280px;
 
 html {
-  font-family: AvenirNext;
+  font-family: Avenir Next;
   color: $Brain-Flix-Black;
+  font-size: 13px;
 }
 //Component Styling
 
@@ -29,12 +32,13 @@ html {
   height: 80px;
   align-content: center;
   align-items: center;
+  justify-content: space-between;
   .searchSection {
     display: flex;
     flex-direction: row;
     border: solid 1px $Silver;
     width: 75%;
-    margin: 16px;
+    margin: 16px 0 16px 16px;
     padding: 8px;
     .searchBar {
       border: none;
@@ -47,6 +51,7 @@ html {
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  margin: 8px;
 }
 .uploader {
   display: flex;
@@ -69,13 +74,8 @@ html {
   }
 }
 
-//This is for the Header Elements
-// .videoSection {
-//   background-image: url("https://i.imgur.com/l2Xfgpl.jpg");
-//   background-position: center; background-size: cover; width: 400px; height:300px; display: flex; flex-direction: column; justify-content: flex-end;
 // .controls {
 //     display: flex; flex-direction: row; justify-content: space-around; background-color: #323232; margin: 8px; border-radius: 5px;
-// }
 // }
 
 //Video Display
@@ -86,6 +86,7 @@ html {
   align-content: center;
   margin: 16px;
 }
+//Video Info, Description, etc.
 .bigContainer {
   padding: 0 16px 0 16px;
 }
@@ -94,8 +95,8 @@ html {
   width: 100%;
 }
 .videoTitle {
-  margin: 0 0 16px 0;
-  font-size: 16pt;
+  margin: 24px 0 16px 0;
+  font-size: 24px;
   font-weight: 600;
 }
 .videoInfo {
@@ -106,9 +107,11 @@ html {
     width: 50%;
     .date {
       margin: 0;
+      color: $Silver;
     }
     .author {
       margin: 0;
+      font-weight: 600;
     }
   }
   .viewsAndLikes {
@@ -120,6 +123,7 @@ html {
       width: 70%;
       margin: 0 0 0 16px;
       display: inline-block;
+      color: $Silver;
     }
   }
   .likeContainer {
@@ -128,15 +132,84 @@ html {
       width: 70%;
       margin: 0 0 0 16px;
       display: inline-block;
+      color: $Silver;
     }
   }
 }
 .icon {
   width: 16px;
 }
+.videoDescriptionSection {
+  margin: 16px;
+}
 .videoDescription {
-  padding: 0 16px 0 16px;
+  margin: 0;
+  text-align: justify;
   p {
     margin: 0;
+  }
+}
+.amountOfComments {
+  margin: 16px 0;
+  font-weight: 700;
+}
+//New Comment Section
+.newCommentSectionContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin: 16px;
+}
+.newCommentSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  form {
+    display: inline-block;
+    width: 80%;
+  }
+}
+label {
+  color: $Silver;
+  margin: 16px 0;
+  size: 12px;
+  font-family: Avenir Next;
+}
+.imageContainer {
+  display: inline-block;
+  width: 20%;
+  // padding: 16px;
+}
+.buttonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.textBox {
+  width: 97.5%;
+  height: 100px;
+  font-family: Avenir Next;
+  border-color: $Silver;
+  border-radius: 5px;
+}
+
+.commentButton {
+  background-image: url("../../src/assets/icons/add_comment.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 100%;
+  background-color: $Brain-Flix-Blue;
+  color: $White;
+  border: $Brain-Flix-Blue;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 400;
+}
+//Tablet Styles
+@media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+  html {
+    font-size: 14px;
   }
 }
