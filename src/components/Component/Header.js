@@ -1,12 +1,15 @@
 import img from "../../assets/logo/BrainFlix-logo.svg";
-
-function LogoHeader() {
+import Search from "./Search";
+import Uploader from "./Uploader";
+function Header() {
   return (
-    <section>
+    <section className="headerSection">
       <div className="logoContainer">
-        <img src={img} classname="logo" alt="logo" />
+        <img src={img} className="logo" alt="logo" />
       </div>
+      <Search />
+      <Uploader />
     </section>
   );
 }
-export default LogoHeader;
+export default Header;

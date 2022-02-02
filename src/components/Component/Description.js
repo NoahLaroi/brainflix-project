@@ -1,6 +1,5 @@
 import videoDetails from "../../data/video-details.json";
 function VideoDescription() {
-  console.log(videoDetails);
   return (
     <section className="videoDescriptionSection">
       <hr />

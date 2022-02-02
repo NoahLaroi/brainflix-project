@@ -55,7 +55,7 @@ html {
   margin: 0;
 }
 
-.mojahed {
+.mohan {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -71,6 +71,7 @@ html {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   background-color: #0095ff;
+  border: #0095ff;
   width: 75%;
   border-radius: 5px;
   height: 32px;
@@ -95,6 +96,10 @@ html {
           justify-content: space-evenly;
   width: 75%;
   font-weight: 600;
+}
+
+.uploader:hover {
+  background-color: #0065ad;
 }
 
 .videoSection {
@@ -271,6 +276,50 @@ label {
   border-radius: 5px;
   padding: 8px;
   font-weight: 400;
+}
+
+.commentButton:hover {
+  background-color: #0065ad;
+}
+
+.commentSection {
+  margin: 16px;
+}
+
+.avatarContainer {
+  width: 25%;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: #afafaf;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.postedCommentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.nameText {
+  width: 70%;
+  display: inline-block;
+}
+
+.dateText {
+  width: 30%;
+  display: inline-block;
+}
+
+.textContainer {
+  width: 75%;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {

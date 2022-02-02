@@ -1,4 +1,4 @@
-let VideoDetails = [
+export default [
   {
     title: "BMX Rampage: 2021 Highlights",
     channel: "Red Cow",
@@ -310,4 +310,3 @@ let VideoDetails = [
     id: "76ca28c0-7dea-4553-887f-8e5129a80fc3",
   },
 ];
-export default VideoDetails;

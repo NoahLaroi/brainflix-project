@@ -47,7 +47,7 @@ html {
     }
   }
 }
-.mojahed {
+.mohan {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -57,6 +57,7 @@ html {
   display: flex;
   flex-flow: row wrap;
   background-color: $Brain-Flix-Blue;
+  border: $Brain-Flix-Blue;
   width: 75%;
   border-radius: 5px;
   height: 32px;
@@ -72,6 +73,9 @@ html {
     width: 75%;
     font-weight: 600;
   }
+}
+.uploader:hover {
+  background-color: $Brain-Flix-Dark-Blue;
 }
 
 // .controls {
@@ -206,6 +210,38 @@ label {
   border-radius: 5px;
   padding: 8px;
   font-weight: 400;
+}
+.commentButton:hover {
+  background-color: $Brain-Flix-Dark-Blue;
+}
+//Posted Comments
+.commentSection {
+  margin: 16px;
+}
+.avatarContainer {
+  width: 25%;
+}
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: $Silver;
+  border-radius: 50%;
+  margin: 8px;
+}
+.postedCommentBox {
+  display: flex;
+  flex-flow: row wrap;
+}
+.nameText {
+  width: 70%;
+  display: inline-block;
+}
+.dateText {
+  width: 30%;
+  display: inline-block;
+}
+.textContainer {
+  width: 75%;
 }
 //Tablet Styles
 @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
