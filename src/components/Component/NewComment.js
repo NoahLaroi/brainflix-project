@@ -14,7 +14,7 @@ function NewComment() {
             name="textBox"
             id=""
             cols="30"
-            rows="3"
+            rows="6"
             placeholder="Add a new comment"
             className="textBox"
           ></textarea>

@@ -1,53 +1,97 @@
 import Header from "../src/components/Component/Header";
-import Uploader from "../src/components/Component/Uploader";
 import Video from "../src/components/Component/Video";
 import VideoDescription from "./components/Component/Description";
 import VideoInfo from "./components/Component/VideoInfo.js";
 import NewComment from "./components/Component/NewComment";
-import CommentInfo from "/Users/noahlatner/Documents/noah-latner-brainflix/src/components/Component/PostedComments.js";
-import Comments from "./components/Component/CommentSection";
+import CommentSection from "./components/Component/CommentSection";
 import VideoDetails from "./data/VideoDetails.js";
-import allVideos from "./data/videos.json";
+import AllVideos from "./data/AllVideos.js";
 import VideoList from "./components/Component/VideoList";
+import NextVideoTitle from "./components/Component/NextVideoTitle";
 import "./styles/App.css";
 
 import React, { Component } from "react";
-
+//Here in App.js I am setting the state for the comments and videos.
 class App extends Component {
   state = {
     videoDetails: VideoDetails,
-    currentVideoId: allVideos[0].id,
     comments: [
       {
-        name: "Micheal Lyons",
-        date: "08/09/2021",
-        comment:
-          "They BLEW the ROOF off at their last event, once everyone started figuring out they were going. This is still simply the greatest opening of an event I have EVER witnessed.",
+        name: VideoDetails[0].comments[0].name,
+        date: new Date(
+          VideoDetails[0].comments[0].timestamp
+        ).toLocaleDateString("en-US"),
+        comment: VideoDetails[0].comments[0].comment,
       },
       {
-        name: "Gary Wong",
-        date: "07/15/2021",
-        comment:
-          "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
+        name: VideoDetails[0].comments[1].name,
+        date: new Date(
+          VideoDetails[0].comments[1].timestamp
+        ).toLocaleDateString("en-US"),
+        comment: VideoDetails[0].comments[1].comment,
       },
       {
-        name: "Theodore Duncan",
-        date: "07/11/2021",
-        comment:
-          "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Every time I see him I feel instantly happy! He’s definitely my favorite ever",
+        name: VideoDetails[0].comments[2].name,
+        date: new Date(
+          VideoDetails[0].comments[2].timestamp
+        ).toLocaleDateString("en-US"),
+        comment: VideoDetails[0].comments[2].comment,
       },
     ],
     video: [
       {
-        id: "84e96018-4022-434e-80bf-000ce4cd12b8",
-        title: "BMX Rampage: 2021 Highlights",
-        chanel: "Red Cow",
-        image: "https://i.imgur.com/l2Xfgpl.jpg",
+        id: AllVideos[1].id,
+        title: AllVideos[1].title,
+        channel: AllVideos[1].channel,
+        image: AllVideos[1].image,
+      },
+      {
+        id: AllVideos[2].id,
+        title: AllVideos[2].title,
+        channel: AllVideos[2].channel,
+        image: AllVideos[2].image,
+      },
+      {
+        id: AllVideos[3].id,
+        title: AllVideos[3].title,
+        channel: AllVideos[3].channel,
+        image: AllVideos[3].image,
+      },
+      {
+        id: AllVideos[4].id,
+        title: AllVideos[4].title,
+        channel: AllVideos[4].channel,
+        image: AllVideos[4].image,
+      },
+      {
+        id: AllVideos[5].id,
+        title: AllVideos[5].title,
+        channel: AllVideos[5].channel,
+        image: AllVideos[5].image,
+      },
+      {
+        id: AllVideos[6].id,
+        title: AllVideos[6].title,
+        channel: AllVideos[6].channel,
+        image: AllVideos[6].image,
+      },
+      {
+        id: AllVideos[7].id,
+        title: AllVideos[7].title,
+        channel: AllVideos[7].channel,
+        image: AllVideos[7].image,
+      },
+      {
+        id: AllVideos[8].id,
+        title: AllVideos[8].title,
+        channel: AllVideos[8].channel,
+        image: AllVideos[8].image,
       },
     ],
   };
+  //In this render function I am rendering the Components to the root HTML element.
   render() {
-    console.log(this.state.VideoDetails);
+    console.log(AllVideos);
     return (
       <div>
         <Header />
@@ -55,7 +99,9 @@ class App extends Component {
         <VideoInfo />
         <VideoDescription />
         <NewComment />
-        <Comments names={this.state.comments} />
+        <CommentSection comments={this.state.comments} />
+        <NextVideoTitle />
+        <VideoList video={this.state.video} />
         {/* <VideoList
           allVideos={this.state.VideoDetails}
           currentId={this.state.currentVideoId}

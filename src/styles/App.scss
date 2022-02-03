@@ -202,7 +202,7 @@ label {
 .commentButton {
   background-image: url("../../src/assets/icons/add_comment.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 16px;
   width: 100%;
   background-color: $Brain-Flix-Blue;
   color: $White;
@@ -242,6 +242,43 @@ label {
 }
 .textContainer {
   width: 75%;
+}
+//Next Video Section Styles
+.nextVidTitle {
+  color: $Silver;
+  margin-left: 16px;
+  font-weight: 600;
+}
+.nextVideos {
+  margin: 16px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.videoCardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  height: 125px;
+  width: 100%;
+}
+.videoCardImage {
+  height: 60%;
+  width: 50%;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 16px;
+}
+.videoCardText {
+  width: 42.5%;
+  .videoCardTitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .videoCardChannel {
+    margin: 0;
+    color: $Silver;
+  }
 }
 //Tablet Styles
 @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
