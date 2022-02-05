@@ -9,7 +9,7 @@ function SearchSection() {
           <input className="searchBar" type="search" placeholder="Search" />
         </div>
       </div>
-      <Mohan />
+      <Mohan className="mohan" />
     </section>
   );
 }

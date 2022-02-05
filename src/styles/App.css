@@ -62,6 +62,14 @@ html {
   margin: 8px;
 }
 
+.antiMohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+  display: none;
+}
+
 .uploader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,5 +385,83 @@ label {
 @media (min-width: 768px) and (max-width: 1279px) {
   html {
     font-size: 14px;
+  }
+
+  .mohan {
+    display: none;
+  }
+
+  .antiMohan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+
+  .headerSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .headerSection .searchSectionContainer {
+    width: 35%;
+  }
+  .headerSection .searchSectionContainer .searchSection {
+    margin: 0;
+  }
+  .headerSection .uploaderContainer {
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .headerSection .uploader {
+    width: 75%;
+  }
+
+  .newCommentSection {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .newCommentSection .imageContainer {
+    width: 10%;
+  }
+
+  .commentSection .avatarContainer {
+    width: 10%;
+  }
+  .commentSection .avatarContainer .avatar {
+    width: 36px;
+    height: 36px;
+    margin-right: 0px;
+  }
+  .commentSection .textContainer {
+    width: 85%;
+  }
+  .commentSection .textContainer .nameText {
+    width: 85%;
+  }
+  .commentSection .textContainer .dateText {
+    width: 15%;
+  }
+
+  .videoCardContainer .videoCardImage {
+    width: 20%;
+  }
+  .videoCardContainer .videoCardText {
+    width: 30%;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -53,6 +53,14 @@ html {
   border-radius: 50%;
   margin: 8px;
 }
+.antiMohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+  display: none;
+}
+
 .uploader {
   display: flex;
   flex-flow: row wrap;
@@ -282,7 +290,88 @@ label {
 }
 //Tablet Styles
 @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+  //Generals
   html {
     font-size: 14px;
+  }
+  .mohan {
+    display: none;
+  }
+  .antiMohan {
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  //Header Section
+  .headerSection {
+    display: flex;
+    flex-flow: row wrap;
+    .searchSectionContainer {
+      width: 35%;
+      .searchSection {
+        margin: 0;
+      }
+    }
+    .uploaderContainer {
+      width: 35%;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+    }
+    .uploader {
+      width: 75%;
+    }
+  }
+  //Video Section Styles
+  // .newCommentSection {
+  //   align-content: center;
+  // }
+  // .labelAndText {
+  //   display: flex;
+  //   flex-flow: column wrap;
+  //   width: 45%;
+  // }
+  // .textBox {
+  //   height: 48px;
+  //   width: 40%;
+  // }
+  // .commentButton {
+  //   width: 40%;
+  // }
+  //Comment Section Styles
+  .newCommentSection {
+    justify-content: flex-start;
+    .imageContainer {
+      width: 10%;
+    }
+  }
+  .commentSection {
+    .avatarContainer {
+      width: 10%;
+      .avatar {
+        width: 36px;
+        height: 36px;
+        margin-right: 0px;
+      }
+    }
+    .textContainer {
+      width: 85%;
+      .nameText {
+        width: 85%;
+      }
+      .dateText {
+        width: 15%;
+      }
+    }
+  }
+  //Next Video Section Styles
+  .videoCardContainer {
+    .videoCardImage {
+      width: 20%;
+    }
+    .videoCardText {
+      width: 30%;
+    }
   }
 }
