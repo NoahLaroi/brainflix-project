@@ -1,5 +1,5 @@
 import React from "react";
-import Mohan from "./Mohan";
+import Mohan from "../Header Components/Mohan";
 
 function NewComment() {
   return (

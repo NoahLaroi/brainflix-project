@@ -1,5 +1,5 @@
 import React from "react";
-import PostedComments from "../../components/Component/PostedComments";
+import PostedComments from "../Comment Components/PostedComments";
 
 const Comments = (props) => {
   return props.comments.map((comments, index) => {

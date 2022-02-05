@@ -1,13 +1,13 @@
-import Header from "../src/components/Component/Header";
-import Video from "../src/components/Component/Video";
-import VideoDescription from "./components/Component/Description";
-import VideoInfo from "./components/Component/VideoInfo.js";
-import NewComment from "./components/Component/NewComment";
-import CommentSection from "./components/Component/CommentSection";
+import Header from "./components/Header Components/Header";
+import Video from "./components/Video Components/Video";
+import VideoDescription from "./components/Video Components/Description";
+import VideoInfo from "./components/Video Components/VideoInfo.js";
+import NewComment from "./components/Comment Components/NewComment";
+import CommentSection from "./components/Comment Components/CommentSection";
 import VideoDetails from "./data/VideoDetails.js";
 import AllVideos from "./data/AllVideos.js";
-import VideoList from "./components/Component/VideoList";
-import NextVideoTitle from "./components/Component/NextVideoTitle";
+import VideoList from "./components/Next Video Components/VideoList";
+import NextVideoTitle from "./components/Next Video Components/NextVideoTitle";
 import "./styles/App.css";
 
 import React, { Component } from "react";
