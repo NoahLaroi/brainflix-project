@@ -455,8 +455,9 @@ label {
   }
   //Header Section
   .logoContainer {
-    width: 47%;
+    width: 35%;
     justify-content: flex-start;
+    padding-left: 80px;
   }
   .headerSection {
     display: flex;
@@ -487,13 +488,14 @@ label {
   .bigContainer {
     margin: 0 0 0 80px;
     padding: 0;
-    width: 65%;
+    width: 90%;
     display: inline-block;
   }
   .videoDescriptionSection {
     margin: 0 0 0 80px;
-    width: 65%;
+    width: 90%;
   }
+
   .date,
   .author {
     width: 50%;
@@ -546,7 +548,7 @@ label {
   }
   .newCommentSectionContainer {
     margin: 0;
-    width: 65%;
+    width: 85%;
   }
   .newCommentSection {
     justify-content: flex-start;
@@ -566,7 +568,7 @@ label {
     align-content: center;
   }
   .commentSection {
-    width: 65%;
+    width: 90%;
     margin: 36px 0 0 80px;
     .avatarContainer {
       width: 10%;
@@ -588,5 +590,19 @@ label {
     .postedCommentBox {
       width: 100%;
     }
+  }
+  //Next Video Section
+  .leftDivider {
+    width: 65%;
+  }
+  .grandDivider {
+    display: flex;
+  }
+  .grandVideoContainer {
+    width: 25%;
+    display: inline-block;
+    margin-right: 80px;
+    border-left: $Silver solid 1px;
+    padding: 16px;
   }
 }

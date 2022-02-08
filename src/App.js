@@ -97,14 +97,17 @@ class App extends Component {
       <div>
         <Header />
         <Video />
-        <VideoInfo />
-        <VideoDescription />
-        <NewComment />
-        <div className="bigDivider">
-          <Comments comments={this.state.comments} />
-          <NextVideoTitle />
-
-          <VideoList video={this.state.video} />
+        <div className="grandDivider">
+          <div className="leftDivider">
+            <VideoInfo />
+            <VideoDescription />
+            <NewComment />
+            <Comments comments={this.state.comments} />
+          </div>
+          <div className="grandVideoContainer">
+            <NextVideoTitle />
+            <VideoList video={this.state.video} />
+          </div>
         </div>
         {/* <VideoList
           allVideos={this.state.VideoDetails}

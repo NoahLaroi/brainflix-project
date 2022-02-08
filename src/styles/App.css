@@ -605,10 +605,11 @@ label {
   }
 
   .logoContainer {
-    width: 47%;
+    width: 35%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-left: 80px;
   }
 
   .headerSection {
@@ -654,13 +655,13 @@ label {
   .bigContainer {
     margin: 0 0 0 80px;
     padding: 0;
-    width: 65%;
+    width: 90%;
     display: inline-block;
   }
 
   .videoDescriptionSection {
     margin: 0 0 0 80px;
-    width: 65%;
+    width: 90%;
   }
 
   .date,
@@ -737,7 +738,7 @@ label {
 
   .newCommentSectionContainer {
     margin: 0;
-    width: 65%;
+    width: 85%;
   }
 
   .newCommentSection {
@@ -775,7 +776,7 @@ label {
   }
 
   .commentSection {
-    width: 65%;
+    width: 90%;
     margin: 36px 0 0 80px;
   }
   .commentSection .avatarContainer {
@@ -797,5 +798,23 @@ label {
   }
   .commentSection .postedCommentBox {
     width: 100%;
+  }
+
+  .leftDivider {
+    width: 65%;
+  }
+
+  .grandDivider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .grandVideoContainer {
+    width: 25%;
+    display: inline-block;
+    margin-right: 80px;
+    border-left: #afafaf solid 1px;
+    padding: 16px;
   }
 }/*# sourceMappingURL=App.css.map */
