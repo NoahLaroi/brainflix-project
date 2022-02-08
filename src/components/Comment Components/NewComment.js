@@ -10,7 +10,7 @@ function NewComment() {
           <Mohan />
           <AntiMohan />
         </div>
-        <form>
+        <form className="textForm">
           <div className="labelAndText">
             <label>JOIN THE CONVERSATION</label>
             <textarea

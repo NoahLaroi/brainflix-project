@@ -7,14 +7,12 @@ import VideoListItem from "./VideoListItem";
 const Videos = (props) => {
   return props.video.map((video, index) => {
     return (
-      <section className="nextVideos">
-        <VideoListItem
-          // id={video.id}
-          image={video.image}
-          title={video.title}
-          channel={video.channel}
-        />
-      </section>
+      <VideoListItem
+        // id={video.id}
+        image={video.image}
+        title={video.title}
+        channel={video.channel}
+      />
     );
   });
 };

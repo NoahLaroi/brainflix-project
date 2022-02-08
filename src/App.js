@@ -3,11 +3,12 @@ import Video from "./components/Video Components/Video";
 import VideoDescription from "./components/Video Components/Description";
 import VideoInfo from "./components/Video Components/VideoInfo.js";
 import NewComment from "./components/Comment Components/NewComment";
-import CommentSection from "./components/Comment Components/CommentSection";
+import Comments from "./components/Comment Components/CommentItems";
 import VideoDetails from "./data/VideoDetails.js";
 import AllVideos from "./data/AllVideos.js";
 import VideoList from "./components/Next Video Components/VideoList";
 import NextVideoTitle from "./components/Next Video Components/NextVideoTitle";
+import NextVideos from "./components/Next Video Components/NextVideos";
 import "./styles/App.css";
 
 import React, { Component } from "react";
@@ -99,9 +100,12 @@ class App extends Component {
         <VideoInfo />
         <VideoDescription />
         <NewComment />
-        <CommentSection comments={this.state.comments} />
-        <NextVideoTitle />
-        <VideoList video={this.state.video} />
+        <div className="bigDivider">
+          <Comments comments={this.state.comments} />
+          <NextVideoTitle />
+
+          <VideoList video={this.state.video} />
+        </div>
         {/* <VideoList
           allVideos={this.state.VideoDetails}
           currentId={this.state.currentVideoId}

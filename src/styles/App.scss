@@ -176,10 +176,10 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  form {
-    display: inline-block;
-    width: 80%;
-  }
+}
+form {
+  display: inline-block;
+  width: 80%;
 }
 label {
   color: $Silver;
@@ -307,6 +307,7 @@ label {
   .headerSection {
     display: flex;
     flex-flow: row wrap;
+    margin: 0 32px;
     .searchSectionContainer {
       width: 35%;
       .searchSection {
@@ -323,28 +324,83 @@ label {
       width: 75%;
     }
   }
-  //Video Section Styles
-  // .newCommentSection {
-  //   align-content: center;
-  // }
-  // .labelAndText {
-  //   display: flex;
-  //   flex-flow: column wrap;
-  //   width: 45%;
-  // }
-  // .textBox {
-  //   height: 48px;
-  //   width: 40%;
-  // }
-  // .commentButton {
-  //   width: 40%;
-  // }
+  // Video Section Styles
+  .videoSection {
+    margin: 0 32px;
+  }
+  .bigContainer {
+    margin: 0 32px;
+    padding: 0;
+  }
+  .videoDescriptionSection {
+    margin: 0 32px;
+  }
+  .dateAndAuthor {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 45%;
+    justify-content: space-between;
+  }
+  .date,
+  .author {
+    width: 50%;
+  }
+  .viewsAndLikes {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 50%;
+  }
+  //New Comment Styles
+  .newCommentSectionContainer {
+    width: 90%;
+    margin: 0;
+  }
+  .avatar {
+    margin-left: 0;
+  }
+  .newCommentSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .labelAndText {
+    display: inline-block;
+    width: 62.5%;
+  }
+  .textBox {
+    height: 32px;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 30%;
+    .commentButton {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+
   //Comment Section Styles
+  .commentSection {
+    margin: 32px;
+  }
   .newCommentSection {
     justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin: 32px;
     .imageContainer {
       width: 10%;
     }
+  }
+  .textForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
   .commentSection {
     .avatarContainer {
@@ -366,12 +422,171 @@ label {
     }
   }
   //Next Video Section Styles
+  .nextVidTitle {
+    width: 50%;
+    margin-left: 32px;
+  }
   .videoCardContainer {
+    margin: 0 32px;
+    .nextVideos {
+      margin: 0;
+    }
     .videoCardImage {
       width: 20%;
     }
     .videoCardText {
       width: 30%;
+    }
+  }
+}
+@media (min-width: $desktop-lower) {
+  //Header Elements Styling (Basically the same as tablet with slight alterations)
+  html {
+    font-size: 14px;
+  }
+  .mohan {
+    display: none;
+  }
+  .antiMohan {
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  //Header Section
+  .logoContainer {
+    width: 47%;
+    justify-content: flex-start;
+  }
+  .headerSection {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 32px;
+    .searchSectionContainer {
+      width: 30%;
+      .searchSection {
+        margin: 0;
+      }
+    }
+    .uploaderContainer {
+      width: 20%;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      align-items: center;
+    }
+    .uploader {
+      width: 65%;
+      height: 55%;
+    }
+  }
+  // Video Section Styles
+  .videoSection {
+    margin: 0 32px;
+  }
+  .bigContainer {
+    margin: 0 0 0 80px;
+    padding: 0;
+    width: 65%;
+    display: inline-block;
+  }
+  .videoDescriptionSection {
+    margin: 0 0 0 80px;
+    width: 65%;
+  }
+  .date,
+  .author {
+    width: 50%;
+    display: inline;
+  }
+  .viewsAndLikes {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 45%;
+  }
+  .dateAndAuthor {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 45%;
+    justify-content: space-between;
+  }
+  //New Comment Styles
+  .newCommentSectionContainer {
+    width: 90%;
+    margin: 0;
+  }
+  .avatar {
+    margin-left: 0;
+  }
+  .newCommentSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .labelAndText {
+    display: inline-block;
+    width: 62.5%;
+  }
+  .textBox {
+    height: 32px;
+    width: 100%;
+  }
+  .buttonContainer {
+    width: 30%;
+    .commentButton {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+  //Comment Section Styles
+  .commentSection {
+    margin: 32px;
+  }
+  .newCommentSectionContainer {
+    margin: 0;
+    width: 65%;
+  }
+  .newCommentSection {
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin: 0 0 0 80px;
+    width: 100%;
+    .imageContainer {
+      width: 10%;
+    }
+  }
+  .textForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .commentSection {
+    width: 65%;
+    margin: 36px 0 0 80px;
+    .avatarContainer {
+      width: 10%;
+      .avatar {
+        width: 36px;
+        height: 36px;
+        margin-right: 0px;
+      }
+    }
+    .textContainer {
+      width: 90%;
+      .nameText {
+        width: 85%;
+      }
+      .dateText {
+        width: 15%;
+      }
+    }
+    .postedCommentBox {
+      width: 100%;
     }
   }
 }
