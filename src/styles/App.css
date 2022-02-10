@@ -110,6 +110,21 @@ html {
   background-color: #0065ad;
 }
 
+.playerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #323232;
+  margin: 8px;
+  border-radius: 5px;
+}
+
 .videoSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,6 +330,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  margin-left: 16px;
 }
 
 .nameText {
@@ -550,21 +566,22 @@ label {
         align-content: center;
   }
 
-  .commentSection .avatarContainer {
+  .avatarContainer {
     width: 10%;
   }
-  .commentSection .avatarContainer .avatar {
+  .avatarContainer .avatar {
     width: 36px;
     height: 36px;
     margin-right: 0px;
   }
-  .commentSection .textContainer {
+
+  .textContainer {
     width: 85%;
   }
-  .commentSection .textContainer .nameText {
+  .textContainer .nameText {
     width: 85%;
   }
-  .commentSection .textContainer .dateText {
+  .textContainer .dateText {
     width: 15%;
   }
 
@@ -620,7 +637,7 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin: 0 32px;
+    margin: 0;
   }
   .headerSection .searchSectionContainer {
     width: 30%;
@@ -732,10 +749,6 @@ label {
     margin-top: 16px;
   }
 
-  .commentSection {
-    margin: 32px;
-  }
-
   .newCommentSectionContainer {
     margin: 0;
     width: 85%;
@@ -775,29 +788,28 @@ label {
         align-content: center;
   }
 
-  .commentSection {
-    width: 90%;
-    margin: 36px 0 0 80px;
-  }
-  .commentSection .avatarContainer {
+  .avatarContainer {
     width: 10%;
   }
-  .commentSection .avatarContainer .avatar {
+  .avatarContainer .avatar {
     width: 36px;
     height: 36px;
     margin-right: 0px;
   }
-  .commentSection .textContainer {
+
+  .postedCommentBox {
+    width: 90%;
+    margin-left: 80px;
+  }
+
+  .textContainer {
     width: 90%;
   }
-  .commentSection .textContainer .nameText {
+  .textContainer .nameText {
     width: 85%;
   }
-  .commentSection .textContainer .dateText {
+  .textContainer .dateText {
     width: 15%;
-  }
-  .commentSection .postedCommentBox {
-    width: 100%;
   }
 
   .leftDivider {
@@ -808,13 +820,17 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row wrap;
+            flex-direction: row wrap;
   }
 
   .grandVideoContainer {
     width: 25%;
     display: inline-block;
-    margin-right: 80px;
     border-left: #afafaf solid 1px;
     padding: 16px;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -5,11 +5,11 @@ import volume from "../../assets/icons/volume_up.svg";
 
 export default function PlayerButtons() {
   return (
-    <div className="controls">
-      <img src={play} alt="play button" />
-      <img src={scrub} alt="scrubber" />
-      <img src={closeScreen} alt="screen expander" />
-      <img src={volume} alt="volume button" />
+    <div className="playerButtons">
+      <img src={play} alt="control playButton" />
+      <img src={scrub} alt="control scrubber" />
+      <img src={closeScreen} alt="control screenExpander" />
+      <img src={volume} alt="control volumeButton" />
     </div>
   );
 }

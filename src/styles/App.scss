@@ -86,9 +86,15 @@ html {
   background-color: $Brain-Flix-Dark-Blue;
 }
 
-// .controls {
-//     display: flex; flex-direction: row; justify-content: space-around; background-color: #323232; margin: 8px; border-radius: 5px;
-// }
+.playerButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #323232;
+  margin: 8px;
+  border-radius: 5px;
+}
+//Video Controls
 
 //Video Display
 .videoSection {
@@ -239,6 +245,7 @@ label {
 .postedCommentBox {
   display: flex;
   flex-flow: row wrap;
+  margin-left: 16px;
 }
 .nameText {
   width: 70%;
@@ -402,23 +409,22 @@ label {
     align-items: center;
     align-content: center;
   }
-  .commentSection {
-    .avatarContainer {
-      width: 10%;
-      .avatar {
-        width: 36px;
-        height: 36px;
-        margin-right: 0px;
-      }
+
+  .avatarContainer {
+    width: 10%;
+    .avatar {
+      width: 36px;
+      height: 36px;
+      margin-right: 0px;
     }
-    .textContainer {
+  }
+  .textContainer {
+    width: 85%;
+    .nameText {
       width: 85%;
-      .nameText {
-        width: 85%;
-      }
-      .dateText {
-        width: 15%;
-      }
+    }
+    .dateText {
+      width: 15%;
     }
   }
   //Next Video Section Styles
@@ -462,7 +468,7 @@ label {
   .headerSection {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 32px;
+    margin: 0;
     .searchSectionContainer {
       width: 30%;
       .searchSection {
@@ -543,9 +549,7 @@ label {
     }
   }
   //Comment Section Styles
-  .commentSection {
-    margin: 32px;
-  }
+
   .newCommentSectionContainer {
     margin: 0;
     width: 85%;
@@ -567,42 +571,41 @@ label {
     align-items: center;
     align-content: center;
   }
-  .commentSection {
-    width: 90%;
-    margin: 36px 0 0 80px;
-    .avatarContainer {
-      width: 10%;
-      .avatar {
-        width: 36px;
-        height: 36px;
-        margin-right: 0px;
-      }
-    }
-    .textContainer {
-      width: 90%;
-      .nameText {
-        width: 85%;
-      }
-      .dateText {
-        width: 15%;
-      }
-    }
-    .postedCommentBox {
-      width: 100%;
+  .avatarContainer {
+    width: 10%;
+    .avatar {
+      width: 36px;
+      height: 36px;
+      margin-right: 0px;
     }
   }
+  .postedCommentBox {
+    width: 90%;
+    margin-left: 80px;
+  }
+  .textContainer {
+    width: 90%;
+    .nameText {
+      width: 85%;
+    }
+    .dateText {
+      width: 15%;
+    }
+  }
+
   //Next Video Section
   .leftDivider {
     width: 65%;
   }
   .grandDivider {
     display: flex;
+    flex-direction: row wrap;
   }
   .grandVideoContainer {
     width: 25%;
     display: inline-block;
-    margin-right: 80px;
     border-left: $Silver solid 1px;
     padding: 16px;
+    margin-right: 0;
   }
 }

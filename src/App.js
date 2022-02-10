@@ -10,7 +10,8 @@ import VideoList from "./components/Next Video Components/VideoList";
 import NextVideoTitle from "./components/Next Video Components/NextVideoTitle";
 import NextVideos from "./components/Next Video Components/NextVideos";
 import "./styles/App.css";
-
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import axios from "axios";
 import React, { Component } from "react";
 //Here in App.js I am setting the state for the comments and videos.
 class App extends Component {
@@ -92,28 +93,26 @@ class App extends Component {
   };
   //In this render function I am rendering the Components to the root HTML element.
   render() {
-    console.log(AllVideos);
+    axios.get();
     return (
-      <div>
-        <Header />
-        <Video />
-        <div className="grandDivider">
-          <div className="leftDivider">
-            <VideoInfo />
-            <VideoDescription />
-            <NewComment />
-            <Comments comments={this.state.comments} />
-          </div>
-          <div className="grandVideoContainer">
-            <NextVideoTitle />
-            <VideoList video={this.state.video} />
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Video />
+          <div className="grandDivider">
+            <div className="leftDivider">
+              <VideoInfo />
+              <VideoDescription />
+              <NewComment />
+              <Comments comments={this.state.comments} />
+            </div>
+            <div className="grandVideoContainer">
+              <NextVideoTitle />
+              <VideoList video={this.state.video} />
+            </div>
           </div>
         </div>
-        {/* <VideoList
-          allVideos={this.state.VideoDetails}
-          currentId={this.state.currentVideoId}
-        /> */}
-      </div>
+      </BrowserRouter>
     );
   }
 }
