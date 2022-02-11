@@ -368,6 +368,9 @@ label {
   .author {
     width: 50%;
   }
+  .postedCommentBox {
+    margin-left: 32px;
+  }
   .viewsAndLikes {
     display: flex;
     flex-wrap: row wrap;
@@ -478,7 +481,7 @@ label {
   //Header Section
   .logoLink {
     display: flex;
-    align-tems: center;
+    align-items: center;
     width: 15%;
   }
   .logoContainer {

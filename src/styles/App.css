@@ -506,6 +506,10 @@ label {
     width: 50%;
   }
 
+  .postedCommentBox {
+    margin-left: 32px;
+  }
+
   .viewsAndLikes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -652,7 +656,9 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-tems: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 15%;
   }
 
