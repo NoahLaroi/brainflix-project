@@ -44,7 +44,11 @@ html {
       border: none;
       outline: none;
       margin: 0;
+      width: 100%;
     }
+  }
+  .searchDivider {
+    width: 100%;
   }
 }
 .mohan {
@@ -314,6 +318,8 @@ label {
   .headerSection {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
     margin: 0 32px;
     .searchSectionContainer {
       width: 35%;
@@ -321,8 +327,18 @@ label {
         margin: 0;
       }
     }
+    .logoLink {
+      display: flex;
+      align-items: center;
+    }
+    .uploadLink {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
     .uploaderContainer {
-      width: 35%;
+      width: 100%;
       display: flex;
       flex-flow: row wrap;
       align-content: center;
@@ -460,6 +476,11 @@ label {
     height: 36px;
   }
   //Header Section
+  .logoLink {
+    display: flex;
+    align-tems: center;
+    width: 15%;
+  }
   .logoContainer {
     width: 35%;
     justify-content: flex-start;
@@ -470,13 +491,19 @@ label {
     flex-flow: row wrap;
     margin: 0;
     .searchSectionContainer {
-      width: 30%;
+      width: 60%;
       .searchSection {
         margin: 0;
       }
     }
-    .uploaderContainer {
+    .uploadLink {
       width: 20%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .uploaderContainer {
+      width: 100%;
       display: flex;
       flex-flow: row wrap;
       align-content: center;

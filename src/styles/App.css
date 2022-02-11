@@ -53,6 +53,10 @@ html {
   border: none;
   outline: none;
   margin: 0;
+  width: 100%;
+}
+.searchSectionContainer .searchDivider {
+  width: 100%;
 }
 
 .mohan {
@@ -425,6 +429,11 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin: 0 32px;
   }
   .headerSection .searchSectionContainer {
@@ -433,8 +442,26 @@ label {
   .headerSection .searchSectionContainer .searchSection {
     margin: 0;
   }
+  .headerSection .logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerSection .uploadLink {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
   .headerSection .uploaderContainer {
-    width: 35%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -621,6 +648,14 @@ label {
     height: 36px;
   }
 
+  .logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-tems: center;
+    width: 15%;
+  }
+
   .logoContainer {
     width: 35%;
     -webkit-box-pack: start;
@@ -640,13 +675,23 @@ label {
     margin: 0;
   }
   .headerSection .searchSectionContainer {
-    width: 30%;
+    width: 60%;
   }
   .headerSection .searchSectionContainer .searchSection {
     margin: 0;
   }
-  .headerSection .uploaderContainer {
+  .headerSection .uploadLink {
     width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .headerSection .uploaderContainer {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

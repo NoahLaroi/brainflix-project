@@ -5,7 +5,7 @@ function SearchSection() {
     <section className="searchSectionContainer">
       <div className="searchSection">
         <img src={search} alt="maginfying glass" />
-        <div>
+        <div className="searchDivider">
           <input className="searchBar" type="search" placeholder="Search" />
         </div>
       </div>
