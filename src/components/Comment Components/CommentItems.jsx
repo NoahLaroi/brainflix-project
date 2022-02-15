@@ -1,7 +1,13 @@
 import React from "react";
 import PostedComments from "./PostedComments";
 
-const Comments = (props) => {
+const CommentItems = (props) => {
+  // const videoComments = props.comments.filter((eachVideo) => {
+  //   if (props.currentVideoId === eachVideo.id) {
+  //     return eachVideo.comments;
+  //   }
+  // });
+  // console.log(videoComments);
   return props.comments.map((comments, index) => {
     return (
       <>
@@ -14,4 +20,4 @@ const Comments = (props) => {
     );
   });
 };
-export default Comments;
+export default CommentItems;

@@ -6,6 +6,7 @@ function PostedComments(props) {
       <div className="avatarContainer">
         <Avatar />
       </div>
+
       <div className="textContainer">
         <span className="nameAndDate">
           <p className="nameText">{props.name}</p>

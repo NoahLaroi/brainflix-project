@@ -8,7 +8,8 @@ const Videos = (props) => {
   return props.video.map((video, index) => {
     return (
       <VideoListItem
-        // id={video.id}
+        handleChange={props.handleChange}
+        id={video.id}
         image={video.image}
         title={video.title}
         channel={video.channel}

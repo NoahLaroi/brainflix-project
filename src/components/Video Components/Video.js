@@ -1,12 +1,11 @@
-import displayVideo from "../../data/videos.json";
 import PlayerButtons from "./PlayerButtons";
-function Video() {
+export default function Video(props) {
+  // console.log(props.image);
   return (
     <section className="videoSection">
-      <video poster={displayVideo[0].image} className="videoDisplay">
-        <PlayerButtons />
+      <video poster={props.image} controls className="videoDisplay">
+        {/* <PlayerButtons /> */}
       </video>
     </section>
   );
 }
-export default Video;

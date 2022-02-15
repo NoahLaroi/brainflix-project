@@ -20,6 +20,9 @@ html {
 //Component Styling
 
 //Header Elements
+.headerSection {
+  margin-bottom: 16px;
+}
 .logoContainer {
   display: flex;
   flex-flow: row wrap;
@@ -90,23 +93,43 @@ html {
   background-color: $Brain-Flix-Dark-Blue;
 }
 
-.playerButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #323232;
-  margin: 8px;
-  border-radius: 5px;
-}
-//Video Controls
+//Video Controls Commented Out for Whenever I Need to Use Them
+// .playerButtons {
+//   position: absolute;
+//   width: 70%;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 8px;
+//   border-radius: 5px;
+//   height: 20px;
+//   background-color: #323232;
+
+//   opacity: 80%;
+//   padding: 5px;
+//   .icon {
+//     width: 16px;
+//     height: 8px;
+//     background-color: #000000;
+//     opacity: 100%;
+//     border-radius: 5px;
+//     padding: 5px;
+//   }
+//   .scrub {
+//     width: 50%;
+//   }
+// }
 
 //Video Display
 .videoSection {
   display: flex;
-  flex-direction: column wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  margin: 16px;
+  margin: 0;
+  background-color: #000000;
+  width: 100%;
 }
 //Video Info, Description, etc.
 .bigContainer {
@@ -114,8 +137,14 @@ html {
 }
 .videoDisplay {
   height: 100%;
-  width: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
+
 .videoTitle {
   margin: 24px 0 16px 0;
   font-size: 24px;
@@ -157,6 +186,9 @@ html {
       color: $Silver;
     }
   }
+}
+.uploadLink {
+  text-decoration: none;
 }
 .icon {
   width: 16px;
@@ -215,6 +247,7 @@ label {
   font-family: Avenir Next;
   border-color: $Silver;
   border-radius: 5px;
+  resize: none;
 }
 
 .commentButton {
@@ -263,9 +296,22 @@ label {
   width: 75%;
 }
 //Next Video Section Styles
+.grandVideoContainer {
+  margin: 0 16px;
+}
+.videoLink {
+  text-decoration: none;
+  h3 {
+    color: $Brain-Flix-Black;
+  }
+}
+.videoLink:hover {
+  div {
+    background-color: $Alabaster;
+  }
+}
 .nextVidTitle {
   color: $Silver;
-  margin-left: 16px;
   font-weight: 600;
 }
 .nextVideos {
@@ -349,7 +395,7 @@ label {
   }
   // Video Section Styles
   .videoSection {
-    margin: 0 32px;
+    margin: 0;
   }
   .bigContainer {
     margin: 0 32px;
@@ -368,14 +414,7 @@ label {
   .author {
     width: 50%;
   }
-  .postedCommentBox {
-    margin-left: 32px;
-  }
-  .viewsAndLikes {
-    display: flex;
-    flex-wrap: row wrap;
-    width: 50%;
-  }
+
   //New Comment Styles
   .newCommentSectionContainer {
     width: 90%;
@@ -412,6 +451,14 @@ label {
   .commentSection {
     margin: 32px;
   }
+  .postedCommentBox {
+    margin-left: 32px;
+  }
+  .viewsAndLikes {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 50%;
+  }
   .newCommentSection {
     justify-content: flex-start;
     align-content: center;
@@ -447,6 +494,9 @@ label {
     }
   }
   //Next Video Section Styles
+  .grandVideoContainer {
+    margin: 0;
+  }
   .nextVidTitle {
     width: 50%;
     margin-left: 32px;
@@ -519,7 +569,7 @@ label {
   }
   // Video Section Styles
   .videoSection {
-    margin: 0 32px;
+    margin: 0;
   }
   .bigContainer {
     margin: 0 0 0 80px;
