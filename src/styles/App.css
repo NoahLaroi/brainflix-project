@@ -401,7 +401,6 @@ label {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 125px;
-  width: 100%;
 }
 
 .videoCardImage {
@@ -471,6 +470,7 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 16px;
   }
   .headerSection .uploadLink {
     width: 40%;
@@ -686,6 +686,7 @@ label {
         -ms-flex-align: center;
             align-items: center;
     width: 15%;
+    padding: 0 0 0 80px;
   }
 
   .logoContainer {
@@ -693,7 +694,7 @@ label {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 80px;
+    padding: 0;
   }
 
   .headerSection {
@@ -707,7 +708,7 @@ label {
     margin: 0;
   }
   .headerSection .searchSectionContainer {
-    width: 60%;
+    width: 55%;
   }
   .headerSection .searchSectionContainer .searchSection {
     margin: 0;
@@ -908,6 +909,6 @@ label {
     display: inline-block;
     border-left: #afafaf solid 1px;
     padding: 16px;
-    margin-right: 0;
+    margin: 0;
   }
 }/*# sourceMappingURL=App.css.map */

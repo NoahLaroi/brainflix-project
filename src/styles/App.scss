@@ -23,6 +23,7 @@ html {
 .headerSection {
   margin-bottom: 16px;
 }
+
 .logoContainer {
   display: flex;
   flex-flow: row wrap;
@@ -324,7 +325,6 @@ label {
   flex-flow: row wrap;
   align-content: center;
   height: 125px;
-  width: 100%;
 }
 .videoCardImage {
   height: 60%;
@@ -376,6 +376,7 @@ label {
     .logoLink {
       display: flex;
       align-items: center;
+      margin: 16px;
     }
     .uploadLink {
       width: 40%;
@@ -533,18 +534,19 @@ label {
     display: flex;
     align-items: center;
     width: 15%;
+    padding: 0 0 0 80px;
   }
   .logoContainer {
     width: 35%;
     justify-content: flex-start;
-    padding-left: 80px;
+    padding: 0;
   }
   .headerSection {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
     .searchSectionContainer {
-      width: 60%;
+      width: 55%;
       .searchSection {
         margin: 0;
       }
@@ -686,6 +688,6 @@ label {
     display: inline-block;
     border-left: $Silver solid 1px;
     padding: 16px;
-    margin-right: 0;
+    margin: 0;
   }
 }

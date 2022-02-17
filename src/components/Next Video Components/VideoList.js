@@ -5,7 +5,19 @@ import VideoListItem from "./VideoListItem";
 //Display every video except where the id matches the one that was passed in.
 
 const Videos = (props) => {
-  return props.video.map((video, index) => {
+  const newVideoArray = props.video.filter((video, index) => {
+    // console.log(video.id, props.currentVideo);
+    return video.id !== props.currentVideo;
+  });
+
+  // console.log(newVideoArray);
+  // if (video.incldes(this.state.currentVideoId)) {
+  //   return newVideoArray;
+  // }
+  return newVideoArray.map((video, index) => {
+    //Filter props.video
+    //Filter every video and remove the video that has the same ID as the current video
+
     return (
       <VideoListItem
         handleChange={props.handleChange}
