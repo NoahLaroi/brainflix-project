@@ -410,3 +410,9 @@ label {
   font-weight: 600;
   margin: 16px;
 }
+
+.bottomButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

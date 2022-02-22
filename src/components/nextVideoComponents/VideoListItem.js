@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, matchPath } from "react-router-dom";
 export default function VideoListItem(props) {
+  console.log(props.id);
   return (
-    <Link className="videoLink">
+    <Link to={"/" + props.id} className="videoLink">
       <div
         className="videoCardContainer"
         onClick={() => props.handleChange(props.id)}

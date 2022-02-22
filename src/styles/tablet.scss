@@ -185,8 +185,6 @@ $desktop-lower: 1280px;
   .uploaderPage {
     margin: 0 32px;
   }
-  .uploaderTop {
-  }
   .uploadTitle {
     font-size: 32px;
     font-weight: 700;
@@ -216,6 +214,7 @@ $desktop-lower: 1280px;
     }
     .cancelButton {
       margin: 0;
+      padding: 8px;
     }
   }
 }

@@ -2,13 +2,13 @@ import img from "../../assets/logo/BrainFlix-logo.svg";
 import Search from "./Search";
 import Uploader from "./Uploader";
 import Logo from "./Logo";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import HomePage from "../SPA_Folders /HomePage";
-import UploaderPage from "../SPA_Folders /uploaderComponent/UploaderPage";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <section className="headerSection">
-      <Logo />
+      <Link to="/" className="logoLink">
+        <Logo />
+      </Link>
       <Search />
       <Uploader />
     </section>
