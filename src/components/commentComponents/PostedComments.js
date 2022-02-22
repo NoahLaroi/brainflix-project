@@ -1,5 +1,4 @@
 import Avatar from "./Avatar";
-
 function PostedComments(props) {
   console.log(props);
   return (

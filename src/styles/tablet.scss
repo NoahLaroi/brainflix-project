@@ -1,0 +1,221 @@
+//Variables and Miscellaneous Stylistic Junk
+$Brain-Flix-Black: #323232;
+$Brain-Flix-Dark-Black: #000000;
+$Brain-Flix-Blue: #0095ff;
+$Brain-Flix-Dark-Blue: #0065ad;
+$Silver: #afafaf;
+$Mercury: #e1e1e1;
+$White: #ffffff;
+$Alabaster: #fafafa;
+//Screen-Sizes
+$tablet-lower: 768px;
+$tablet-higher: 1279px;
+$desktop-lower: 1280px;
+
+//Tablet Styles
+@media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+  //Generals
+  html {
+    font-size: 14px;
+  }
+  .mohan {
+    display: none;
+  }
+  .antiMohan {
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  //Header Section
+  .headerSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 0 32px;
+    .searchSectionContainer {
+      width: 35%;
+      .searchSection {
+        margin: 0;
+      }
+    }
+    .logoLink {
+      display: flex;
+      align-items: center;
+      margin: 16px;
+    }
+    .uploadLink {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .uploaderContainer {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+    }
+    .uploader {
+      width: 75%;
+    }
+  }
+  // Video Section Styles
+  .videoSection {
+    margin: 0;
+  }
+  .bigContainer {
+    margin: 0 32px;
+    padding: 0;
+  }
+  .videoDescriptionSection {
+    margin: 0 32px;
+  }
+  .dateAndAuthor {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 45%;
+    justify-content: space-between;
+  }
+  .date,
+  .author {
+    width: 50%;
+  }
+
+  //New Comment Styles
+  .newCommentSectionContainer {
+    width: 90%;
+    margin: 0;
+  }
+  .avatar {
+    margin-left: 0;
+  }
+  .newCommentSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .labelAndText {
+    display: inline-block;
+    width: 62.5%;
+  }
+  .textBox {
+    height: 32px;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 30%;
+    .commentButton {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+
+  //Comment Section Styles
+  .commentSection {
+    margin: 32px;
+  }
+  .postedCommentBox {
+    margin-left: 32px;
+  }
+  .viewsAndLikes {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 50%;
+  }
+  .newCommentSection {
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin: 32px;
+    .imageContainer {
+      width: 10%;
+    }
+  }
+  .textForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .avatarContainer {
+    width: 10%;
+    .avatar {
+      width: 36px;
+      height: 36px;
+      margin-right: 0px;
+    }
+  }
+  .textContainer {
+    width: 85%;
+    .nameText {
+      width: 85%;
+    }
+    .dateText {
+      width: 15%;
+    }
+  }
+  //Next Video Section Styles
+  .grandVideoContainer {
+    margin: 0;
+  }
+  .nextVidTitle {
+    width: 50%;
+    margin-left: 32px;
+  }
+  .videoCardContainer {
+    margin: 0 32px;
+    .nextVideos {
+      margin: 0;
+    }
+    .videoCardImage {
+      width: 20%;
+    }
+    .videoCardText {
+      width: 30%;
+    }
+  }
+  //Uploader Page
+  .uploaderPage {
+    margin: 0 32px;
+  }
+  .uploaderTop {
+  }
+  .uploadTitle {
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid $Silver;
+    padding: 32px 0 32px 0;
+    border-top: 1px solid $Silver;
+    margin-top: 0;
+  }
+  .uploaderImageContainer {
+    width: 50%;
+  }
+  .publishButton {
+    margin: 0;
+  }
+  .descriptionInput {
+    height: 76px;
+  }
+  .bottomButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 32px 0;
+    border-top: 1px solid $Silver;
+    padding-top: 32px;
+    .buttons {
+      width: 20%;
+    }
+    .cancelButton {
+      margin: 0;
+    }
+  }
+}

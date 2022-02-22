@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import Header from "../Header Components/Header";
-import Video from "../Video Components/Video";
-import VideoInfo from "../Video Components/VideoInfo";
+import Header from "../headerComponents/Header";
+import Video from "../videoComponents/Video";
+import VideoInfo from "../videoComponents/VideoInfo";
 import VideoDetails from "../../data/VideoDetails";
 import AllVideos from "../../data/AllVideos";
-import VideoDescription from "../Video Components/Description";
-import NewComment from "../Comment Components/NewComment";
-import CommentItems from "../Comment Components/CommentItems";
-import NextVideoTitle from "../Next Video Components/NextVideoTitle";
-import VideoList from "../Next Video Components/VideoList";
+import VideoDescription from "../videoComponents/Description";
+import NewComment from "../commentComponents/NewComment";
+import CommentItems from "../commentComponents/CommentItems";
+import NextVideoTitle from "../nextVideoComponents/NextVideoTitle";
+import VideoList from "../nextVideoComponents/VideoList";
 import axios from "axios";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 export default class HomePage extends Component {
@@ -50,7 +50,6 @@ export default class HomePage extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Header />
           <Video id={this.state.currentVideoId} currentVideo={currentVideo} />
           <div className="grandDivider">
             <div className="leftDivider">

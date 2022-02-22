@@ -1,0 +1,514 @@
+.headerSection {
+  margin-bottom: 16px;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+
+.searchSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 80px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.searchSectionContainer .searchSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: solid 1px #afafaf;
+  width: 75%;
+  margin: 16px 0 16px 16px;
+  padding: 8px;
+}
+.searchSectionContainer .searchSection .searchBar {
+  border: none;
+  outline: none;
+  margin: 0;
+  width: 100%;
+}
+.searchSectionContainer .searchDivider {
+  width: 100%;
+}
+
+.mohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.antiMohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+  display: none;
+}
+
+.uploader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #0095ff;
+  border: #0095ff;
+  width: 75%;
+  border-radius: 5px;
+  height: 32px;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.uploader .uploaderContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 75%;
+  font-weight: 600;
+}
+
+.uploader:hover {
+  background-color: #0065ad;
+}
+
+.videoSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+  background-color: #000000;
+  width: 100%;
+}
+
+.bigContainer {
+  padding: 0 16px 0 16px;
+}
+
+.videoDisplay {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.videoTitle {
+  margin: 24px 0 16px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.videoInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  margin: 16px 0;
+}
+.videoInfo .dateAndAuthor {
+  width: 50%;
+}
+.videoInfo .dateAndAuthor .date {
+  margin: 0;
+  color: #afafaf;
+}
+.videoInfo .dateAndAuthor .author {
+  margin: 0;
+  font-weight: 600;
+}
+.videoInfo .viewsAndLikes {
+  width: 50%;
+}
+.videoInfo .viewContainer {
+  width: 100%;
+}
+.videoInfo .viewContainer .views {
+  width: 70%;
+  margin: 0 0 0 16px;
+  display: inline-block;
+  color: #afafaf;
+}
+.videoInfo .likeContainer {
+  width: 100%;
+}
+.videoInfo .likeContainer .likes {
+  width: 70%;
+  margin: 0 0 0 16px;
+  display: inline-block;
+  color: #afafaf;
+}
+
+.uploadLink {
+  text-decoration: none;
+}
+
+.icon {
+  width: 16px;
+}
+
+.videoDescriptionSection {
+  margin: 16px;
+}
+
+.videoDescription {
+  margin: 0;
+  text-align: justify;
+}
+.videoDescription p {
+  margin: 0;
+}
+
+.amountOfComments {
+  margin: 16px 0;
+  font-weight: 700;
+}
+
+.newCommentSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px;
+}
+
+.newCommentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form {
+  display: inline-block;
+  width: 80%;
+}
+
+label {
+  color: #afafaf;
+  margin: 16px 0;
+  size: 12px;
+  font-family: Avenir Next;
+}
+
+.imageContainer {
+  display: inline-block;
+  width: 20%;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.textBox {
+  width: 97.5%;
+  height: 100px;
+  font-family: Avenir Next;
+  border-color: #afafaf;
+  border-radius: 5px;
+  resize: none;
+}
+
+.commentButton {
+  background-image: url("../../src/assets/icons/add_comment.svg");
+  background-repeat: no-repeat;
+  background-position: 16px;
+  width: 100%;
+  background-color: #0095ff;
+  color: #ffffff;
+  border: #0095ff;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 400;
+}
+
+.commentButton:hover {
+  background-color: #0065ad;
+}
+
+.commentSection {
+  margin: 16px;
+}
+
+.avatarContainer {
+  width: 25%;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: #afafaf;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.postedCommentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: 16px;
+}
+
+.nameText {
+  width: 70%;
+  display: inline-block;
+}
+
+.dateText {
+  width: 30%;
+  display: inline-block;
+}
+
+.textContainer {
+  width: 75%;
+}
+
+.grandVideoContainer {
+  margin: 0 16px;
+}
+
+.videoLink {
+  text-decoration: none;
+}
+.videoLink h3 {
+  color: #323232;
+}
+
+.videoLink:hover div {
+  background-color: #fafafa;
+}
+
+.nextVidTitle {
+  color: #afafaf;
+  font-weight: 600;
+}
+
+.nextVideos {
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.videoCardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 125px;
+}
+
+.videoCardImage {
+  height: 60%;
+  width: 50%;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 16px;
+}
+
+.videoCardText {
+  width: 42.5%;
+}
+.videoCardText .videoCardTitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.videoCardText .videoCardChannel {
+  margin: 0;
+  color: #afafaf;
+}
+
+.uploadTitle {
+  color: #000000;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+label {
+  color: #afafaf;
+}
+
+.uploaderPage {
+  margin: 16px;
+}
+
+.uploaderImageContainer {
+  background-image: url("../assets/images/Upload-video-preview.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+}
+
+.titleInput {
+  resize: none;
+  background-color: #fafafa;
+  font-family: "Avenir Next";
+  border-color: #afafaf;
+  border-radius: 5px;
+}
+
+.descriptionInput {
+  resize: none;
+  font-family: "Avenir Next";
+  border-color: #afafaf;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.uploadForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+}
+
+.publishButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #0095ff;
+  border: #0095ff;
+  width: 75%;
+  border-radius: 5px;
+  height: 32px;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.publishButton .publishContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 75%;
+  font-weight: 600;
+}
+
+.cancelButton {
+  background-color: #ffffff;
+  border: none;
+  color: #0095ff;
+  font-weight: 600;
+  margin: 16px;
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,16 +1,18 @@
 import React from "react";
-import Video from "../Video Components/Video";
+import Video from "../videoComponents/Video";
 import PostedComments from "./PostedComments";
 
 const CommentItems = (props) => {
-  // console.log(props);
+  console.log(props.currentVideo);
   // const newComments = props.comments.filter((comments, currentVideo) => {
-  //   console.log(comments);
-  //   return comments === props.currentVideo;
+  //   console.log(props.currentVideo);
+  //   if (comments === props.currentVideoId) {
+  //     return comments === props.currentVideo[0];
+  //   }
   // });
-  // console.log(newComments);
+  console.log(props);
   return props.comments.map((comments, index) => {
-    // console.log(props.comments.name);
+    console.log(props.comments[0].name);
     return (
       <PostedComments
         currentVideoId={props.currentVideoId}

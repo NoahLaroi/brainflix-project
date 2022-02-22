@@ -1,0 +1,412 @@
+//Variables and Miscellaneous Stylistic Junk
+$Brain-Flix-Black: #323232;
+$Brain-Flix-Dark-Black: #000000;
+$Brain-Flix-Blue: #0095ff;
+$Brain-Flix-Dark-Blue: #0065ad;
+$Silver: #afafaf;
+$Mercury: #e1e1e1;
+$White: #ffffff;
+$Alabaster: #fafafa;
+//Screen-Sizes
+$tablet-lower: 768px;
+$tablet-higher: 1279px;
+$desktop-lower: 1280px;
+
+//Header Elements
+.headerSection {
+  margin-bottom: 16px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 16px;
+}
+.searchSectionContainer {
+  display: flex;
+  flex-flow: row wrap;
+  height: 80px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  .searchSection {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px $Silver;
+    width: 75%;
+    margin: 16px 0 16px 16px;
+    padding: 8px;
+    .searchBar {
+      border: none;
+      outline: none;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .searchDivider {
+    width: 100%;
+  }
+}
+.mohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+}
+.antiMohan {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+  display: none;
+}
+
+.uploader {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $Brain-Flix-Blue;
+  border: $Brain-Flix-Blue;
+  width: 75%;
+  border-radius: 5px;
+  height: 32px;
+  display: flex;
+  align-content: center;
+  color: $White;
+  margin: 0 auto;
+  .uploaderContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 75%;
+    font-weight: 600;
+  }
+}
+.uploader:hover {
+  background-color: $Brain-Flix-Dark-Blue;
+}
+
+//Video Controls Commented Out for Whenever I Need to Use Them
+// .playerButtons {
+//   position: absolute;
+//   width: 70%;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 8px;
+//   border-radius: 5px;
+//   height: 20px;
+//   background-color: #323232;
+
+//   opacity: 80%;
+//   padding: 5px;
+//   .icon {
+//     width: 16px;
+//     height: 8px;
+//     background-color: #000000;
+//     opacity: 100%;
+//     border-radius: 5px;
+//     padding: 5px;
+//   }
+//   .scrub {
+//     width: 50%;
+//   }
+// }
+
+//Video Display
+.videoSection {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  background-color: #000000;
+  width: 100%;
+}
+//Video Info, Description, etc.
+.bigContainer {
+  padding: 0 16px 0 16px;
+}
+.videoDisplay {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.videoTitle {
+  margin: 24px 0 16px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.videoInfo {
+  display: flex;
+  flex-direction: row wrap;
+  margin: 16px 0;
+  .dateAndAuthor {
+    width: 50%;
+    .date {
+      margin: 0;
+      color: $Silver;
+    }
+    .author {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+  .viewsAndLikes {
+    width: 50%;
+  }
+  .viewContainer {
+    width: 100%;
+    .views {
+      width: 70%;
+      margin: 0 0 0 16px;
+      display: inline-block;
+      color: $Silver;
+    }
+  }
+  .likeContainer {
+    width: 100%;
+    .likes {
+      width: 70%;
+      margin: 0 0 0 16px;
+      display: inline-block;
+      color: $Silver;
+    }
+  }
+}
+.uploadLink {
+  text-decoration: none;
+}
+.icon {
+  width: 16px;
+}
+.videoDescriptionSection {
+  margin: 16px;
+}
+.videoDescription {
+  margin: 0;
+  text-align: justify;
+  p {
+    margin: 0;
+  }
+}
+.amountOfComments {
+  margin: 16px 0;
+  font-weight: 700;
+}
+//New Comment Section
+.newCommentSectionContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin: 16px;
+}
+.newCommentSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+form {
+  display: inline-block;
+  width: 80%;
+}
+label {
+  color: $Silver;
+  margin: 16px 0;
+  size: 12px;
+  font-family: Avenir Next;
+}
+.imageContainer {
+  display: inline-block;
+  width: 20%;
+  // padding: 16px;
+}
+.buttonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.textBox {
+  width: 97.5%;
+  height: 100px;
+  font-family: Avenir Next;
+  border-color: $Silver;
+  border-radius: 5px;
+  resize: none;
+}
+
+.commentButton {
+  background-image: url("../../src/assets/icons/add_comment.svg");
+  background-repeat: no-repeat;
+  background-position: 16px;
+  width: 100%;
+  background-color: $Brain-Flix-Blue;
+  color: $White;
+  border: $Brain-Flix-Blue;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 400;
+}
+.commentButton:hover {
+  background-color: $Brain-Flix-Dark-Blue;
+}
+//Posted Comments
+.commentSection {
+  margin: 16px;
+}
+.avatarContainer {
+  width: 25%;
+}
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: $Silver;
+  border-radius: 50%;
+  margin: 8px;
+}
+.postedCommentBox {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 16px;
+}
+.nameText {
+  width: 70%;
+  display: inline-block;
+}
+.dateText {
+  width: 30%;
+  display: inline-block;
+}
+.textContainer {
+  width: 75%;
+}
+//Next Video Section Styles
+.grandVideoContainer {
+  margin: 0 16px;
+}
+.videoLink {
+  text-decoration: none;
+  h3 {
+    color: $Brain-Flix-Black;
+  }
+}
+.videoLink:hover {
+  div {
+    background-color: $Alabaster;
+  }
+}
+.nextVidTitle {
+  color: $Silver;
+  font-weight: 600;
+}
+.nextVideos {
+  margin: 16px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.videoCardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  height: 125px;
+}
+.videoCardImage {
+  height: 60%;
+  width: 50%;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 16px;
+}
+.videoCardText {
+  width: 42.5%;
+  .videoCardTitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .videoCardChannel {
+    margin: 0;
+    color: $Silver;
+  }
+}
+
+//Uploader Page Styles
+.uploadTitle {
+  color: $Brain-Flix-Dark-Black;
+  font-weight: 600;
+  font-size: 24px;
+}
+label {
+  color: $Silver;
+}
+
+.uploaderPage {
+  margin: 16px;
+}
+.uploaderImageContainer {
+  background-image: url("../assets/images/Upload-video-preview.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+}
+
+.titleInput {
+  resize: none;
+  background-color: $Alabaster;
+  font-family: "Avenir Next";
+  border-color: $Silver;
+  border-radius: 5px;
+}
+.descriptionInput {
+  resize: none;
+  font-family: "Avenir Next";
+  border-color: $Silver;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  background-color: $Alabaster;
+}
+.uploadForm {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.publishButton {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $Brain-Flix-Blue;
+  border: $Brain-Flix-Blue;
+  width: 75%;
+  border-radius: 5px;
+  height: 32px;
+  display: flex;
+  align-content: center;
+  color: $White;
+  margin: 0 auto;
+  .publishContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 75%;
+    font-weight: 600;
+  }
+}
+.cancelButton {
+  background-color: $White;
+  border: none;
+  color: $Brain-Flix-Blue;
+  font-weight: 600;
+  margin: 16px;
+}

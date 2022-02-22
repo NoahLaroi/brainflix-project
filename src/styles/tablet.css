@@ -1,0 +1,280 @@
+@media (min-width: 768px) and (max-width: 1279px) {
+  html {
+    font-size: 14px;
+  }
+
+  .mohan {
+    display: none;
+  }
+
+  .antiMohan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+
+  .headerSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 0 0 32px;
+  }
+  .headerSection .searchSectionContainer {
+    width: 35%;
+  }
+  .headerSection .searchSectionContainer .searchSection {
+    margin: 0;
+  }
+  .headerSection .logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 16px;
+  }
+  .headerSection .uploadLink {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .headerSection .uploaderContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .headerSection .uploader {
+    width: 75%;
+  }
+
+  .videoSection {
+    margin: 0;
+  }
+
+  .bigContainer {
+    margin: 0 32px;
+    padding: 0;
+  }
+
+  .videoDescriptionSection {
+    margin: 0 32px;
+  }
+
+  .dateAndAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .date,
+.author {
+    width: 50%;
+  }
+
+  .newCommentSectionContainer {
+    width: 90%;
+    margin: 0;
+  }
+
+  .avatar {
+    margin-left: 0;
+  }
+
+  .newCommentSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .labelAndText {
+    display: inline-block;
+    width: 62.5%;
+  }
+
+  .textBox {
+    height: 32px;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 30%;
+  }
+  .buttonContainer .commentButton {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .commentSection {
+    margin: 32px;
+  }
+
+  .postedCommentBox {
+    margin-left: 32px;
+  }
+
+  .viewsAndLikes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
+    width: 50%;
+  }
+
+  .newCommentSection {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 32px;
+  }
+  .newCommentSection .imageContainer {
+    width: 10%;
+  }
+
+  .textForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+
+  .avatarContainer {
+    width: 10%;
+  }
+  .avatarContainer .avatar {
+    width: 36px;
+    height: 36px;
+    margin-right: 0px;
+  }
+
+  .textContainer {
+    width: 85%;
+  }
+  .textContainer .nameText {
+    width: 85%;
+  }
+  .textContainer .dateText {
+    width: 15%;
+  }
+
+  .grandVideoContainer {
+    margin: 0;
+  }
+
+  .nextVidTitle {
+    width: 50%;
+    margin-left: 32px;
+  }
+
+  .videoCardContainer {
+    margin: 0 32px;
+  }
+  .videoCardContainer .nextVideos {
+    margin: 0;
+  }
+  .videoCardContainer .videoCardImage {
+    width: 20%;
+  }
+  .videoCardContainer .videoCardText {
+    width: 30%;
+  }
+
+  .uploaderPage {
+    margin: 0 32px;
+  }
+
+  .uploadTitle {
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid #afafaf;
+    padding: 32px 0 32px 0;
+    border-top: 1px solid #afafaf;
+    margin-top: 0;
+  }
+
+  .uploaderImageContainer {
+    width: 50%;
+  }
+
+  .publishButton {
+    margin: 0;
+  }
+
+  .descriptionInput {
+    height: 76px;
+  }
+
+  .bottomButtonContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 0 32px 0;
+    border-top: 1px solid #afafaf;
+    padding-top: 32px;
+  }
+  .bottomButtonContainer .buttons {
+    width: 20%;
+  }
+  .bottomButtonContainer .cancelButton {
+    margin: 0;
+  }
+}/*# sourceMappingURL=tablet.css.map */

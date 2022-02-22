@@ -1,7 +1,7 @@
 import { Component } from "react";
 import React from "react";
-import AntiMohan from "../Header Components/AntiMohan";
-import Mohan from "../Header Components/Mohan";
+import AntiMohan from "../headerComponents/AntiMohan";
+import Mohan from "../headerComponents/Mohan";
 
 class NewComment extends React.Component {
   constructor(props) {

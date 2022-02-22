@@ -1,0 +1,326 @@
+@media (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  .mohan {
+    display: none;
+  }
+
+  .antiMohan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+
+  .logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15%;
+    padding: 0 0 0 80px;
+  }
+
+  .logoContainer {
+    width: 35%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+
+  .headerSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0;
+  }
+  .headerSection .searchSectionContainer {
+    width: 55%;
+  }
+  .headerSection .searchSectionContainer .searchSection {
+    margin: 0;
+  }
+  .headerSection .uploadLink {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .headerSection .uploaderContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerSection .uploader {
+    width: 65%;
+    height: 55%;
+  }
+
+  .videoSection {
+    margin: 0;
+  }
+
+  .bigContainer {
+    margin: 0 0 0 80px;
+    padding: 0;
+    width: 90%;
+    display: inline-block;
+  }
+
+  .videoDescriptionSection {
+    margin: 0 0 0 80px;
+    width: 90%;
+  }
+
+  .date,
+.author {
+    width: 50%;
+    display: inline;
+  }
+
+  .viewsAndLikes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
+    width: 45%;
+  }
+
+  .dateAndAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
+    width: 45%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .newCommentSectionContainer {
+    width: 90%;
+    margin: 0;
+  }
+
+  .avatar {
+    margin-left: 0;
+  }
+
+  .newCommentSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .labelAndText {
+    display: inline-block;
+    width: 62.5%;
+  }
+
+  .textBox {
+    height: 32px;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 30%;
+  }
+  .buttonContainer .commentButton {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .newCommentSectionContainer {
+    margin: 0;
+    width: 85%;
+  }
+
+  .newCommentSection {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 0 80px;
+    width: 100%;
+  }
+  .newCommentSection .imageContainer {
+    width: 10%;
+  }
+
+  .textForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+
+  .avatarContainer {
+    width: 10%;
+  }
+  .avatarContainer .avatar {
+    width: 36px;
+    height: 36px;
+    margin-right: 0px;
+  }
+
+  .postedCommentBox {
+    width: 90%;
+    margin-left: 80px;
+  }
+
+  .textContainer {
+    width: 90%;
+  }
+  .textContainer .nameText {
+    width: 85%;
+  }
+  .textContainer .dateText {
+    width: 15%;
+  }
+
+  .leftDivider {
+    width: 65%;
+  }
+
+  .grandDivider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row wrap;
+            flex-direction: row wrap;
+  }
+
+  .grandVideoContainer {
+    width: 25%;
+    display: inline-block;
+    border-left: #afafaf solid 1px;
+    padding: 16px;
+    margin: 0;
+  }
+
+  .uploaderPage {
+    margin: 0 80px;
+  }
+
+  .uploadPageDivider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .videoUploadContainer {
+    width: 30%;
+    margin-right: 24px;
+  }
+
+  .uploadTitle {
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid #afafaf;
+    padding: 32px 0 32px 0;
+    border-top: 1px solid #afafaf;
+    margin-top: 0;
+  }
+
+  .uploaderImageContainer {
+    width: 100%;
+  }
+
+  .uploadForm {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+
+  .publishButton {
+    margin: 0;
+  }
+
+  .descriptionInput {
+    height: 76px;
+  }
+
+  .bottomButtonContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 0 32px 0;
+    border-top: 1px solid #afafaf;
+    padding-top: 32px;
+  }
+  .bottomButtonContainer .buttons {
+    width: 15%;
+  }
+  .bottomButtonContainer .cancelButton {
+    margin: 0;
+  }
+}/*# sourceMappingURL=desktop.css.map */
