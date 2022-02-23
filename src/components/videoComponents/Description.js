@@ -3,8 +3,7 @@ function VideoDescription(props) {
   return (
     <section className="videoDescriptionSection">
       <hr />
-      <p className="videoDescription">{videoDetails[0].description}</p>
-
+      <p className="videoDescription">{props.description}</p>
       <p className="amountOfComments">3 Comments</p>
     </section>
   );

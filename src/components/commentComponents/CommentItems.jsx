@@ -1,5 +1,4 @@
 import React from "react";
-import Video from "../videoComponents/Video";
 import PostedComments from "./PostedComments";
 
 const CommentItems = (props) => {
@@ -12,7 +11,7 @@ const CommentItems = (props) => {
   // });
   console.log(props);
   return props.comments.map((comments, index) => {
-    console.log(props.comments[0].name);
+    console.log(comments);
     return (
       <PostedComments
         currentVideoId={props.currentVideoId}
