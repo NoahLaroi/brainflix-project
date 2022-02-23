@@ -1,6 +1,5 @@
 import Avatar from "./Avatar";
 function PostedComments(props) {
-  console.log(props);
   return (
     <div className="postedCommentBox">
       <div className="avatarContainer">

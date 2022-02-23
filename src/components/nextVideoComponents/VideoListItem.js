@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, matchPath, useParams, useHistory } from "react-router-dom";
 export default function VideoListItem(props) {
-  console.log(props.id);
+  // console.log(props.id);
 
   return (
     <Link to={`/${props.id}`} className="videoLink">

@@ -25,7 +25,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import VideoListItem from "./components/nextVideoComponents/VideoListItem";
 //Curent Things that I have to do: 1. Switch up comments to match currentVideo. 2. Dynamic Links in react-dom-router. 3. Axios request the API
-
+const API_KEY = "f3a0830a-f1dd-4ad8-91f6-eebaae1aa1ec";
 //Here in App.js I am setting the state for the comments and videos.
 
 export default function App() {
@@ -46,15 +46,27 @@ class HomePage extends Component {
   state = {
     currentVideoId: "84e96018-4022-434e-80bf-000ce4cd12b8",
     currentVideoInfo: VideoDetails,
-    nextVideo: AllVideos,
+    nextVideo: [],
   };
 
   componentDidMount() {
-    console.log("component did mount");
-    // this.setState({ currentVideoId: "84e96018-4022-434e-80bf-000ce4cd12b8" });
-    let curVid = axios.get("https://project-2-api.herokuapp.com/video/:id");
+    axios
+      .get(`https://project-2-api.herokuapp.com/videos/?api_key=${API_KEY}`)
+      .then((res) => {
+        this.setState({ nextVideo: res.data });
+      });
   }
 
+  componentDidUpdate() {
+    // axios
+    //   .get(
+    //     "https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=f3a0830a-f1dd-4ad8-91f6-eebaae1aa1ec"
+    //   )
+    //   .then((res) => {
+    //     this.setState({ currentVideoId: res });
+    //     console.log(res);
+    //   });
+  }
   //Allows me to get the current video Id of the Id that I click on.
   handleChange = (id) => {
     this.setState({ currentVideoId: id });
