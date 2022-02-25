@@ -17,3 +17,9 @@ html {
   color: $Brain-Flix-Black;
   font-size: 13px;
 }
+.publishButton:hover {
+  background-color: $Brain-Flix-Dark-Blue;
+}
+.cancelButton:hover {
+  background-color: $Silver;
+}

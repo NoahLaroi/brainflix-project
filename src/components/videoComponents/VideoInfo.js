@@ -1,5 +1,3 @@
-import videoInfo from "/Users/noahlatner/Documents/noah-latner-brainflix/src/data/videos.json";
-import videoDetails from "/Users/noahlatner/Documents/noah-latner-brainflix/src/data/video-details.json";
 import likeIcon from "../../assets/icons/likes.svg";
 import viewIcon from "../../assets/icons/views.svg";
 function VideoInfo(props) {

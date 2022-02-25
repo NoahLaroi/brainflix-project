@@ -2,8 +2,6 @@
 import UploaderPage from "./components/SPAComponents/uploaderComponent/UploaderPage";
 import Video from "./components/videoComponents/Video";
 import VideoInfo from "./components/videoComponents/VideoInfo";
-import VideoDetails from "./data/VideoDetails";
-import AllVideos from "./data/AllVideos";
 import Description from "./components/videoComponents/Description";
 import NewComment from "./components/commentComponents/NewComment";
 import CommentItems from "./components/commentComponents/CommentItems";
@@ -66,7 +64,6 @@ class HomePage extends Component {
           nextVideo: res.data,
           currentVideoId: res.data[0].id,
         });
-        console.log(res.data[0].id);
       });
   }
   componentDidUpdate(prevProps, prevState) {
@@ -76,74 +73,53 @@ class HomePage extends Component {
           `https://project-2-api.herokuapp.com/videos/${this.state.currentVideoId}?api_key=${API_KEY}`
         )
         .then((res) => {
-          console.log(res);
           this.setState({ currentVideoInfo: res.data });
-          console.log(res);
         });
+      // } else if (this.state.currentVideoId === prevState.currentVideoId) {
+      //   this.state.nextVideo.length > 0 &&
+      //     this.setState({ currentVideoId: this.state.nextVideo[0].id });
+      // this.setState({ currentVideoId: this.state.nextVideo[0].id });
     }
   }
+
   //Allows me to get the current video Id of the Id that I click on.
   handleChange = (id) => {
     this.setState({ currentVideoId: id });
   };
   render() {
-    console.log(this.state.currentVideoInfo);
     return (
-      <div>
-        {/* <Video id={this.state.currentVideoId} currentVideo={currentVideo} /> */}
-        <div className="grandDivider">
-          <div className="leftDivider">
-            {this.state.isLoading ? (
-              <>
-                <Video
-                  id={this.state.currentVideoId}
-                  currentVideo={this.state.currentVideoInfo}
-                />
-                <VideoInfo currentVideo={this.state.currentVideoInfo} />
-                <Description
-                  description={this.state.currentVideoInfo.description}
-                />
-                <NewComment />
-                <CommentItems
-                  comments={this.state.currentVideoInfo.comments}
-                  currentVideo={this.state.currentVideoId}
-                />
-                <div className="grandVideoContainer">
-                  <NextVideoTitle />
-                  <VideoList
-                    video={this.state.nextVideo}
-                    handleChange={this.handleChange}
-                    currentVideo={this.state.currentVideoId}
-                  />
-                </div>
-              </>
-            ) : (
-              <h1>You played yourself.</h1>
-            )}
-
-            {/* <VideoInfo
-              likes={currentVideo[0].likes}
-              views={currentVideo[0].views}
-              channel={currentVideo[0].channel}
-              date={currentVideo[0].date}
+      <>
+        {this.state.isLoading ? (
+          <div className="grandDivider">
+            <Video
+              id={this.state.currentVideoId}
+              currentVideo={this.state.currentVideoInfo}
             />
-            <Description description={currentVideo[0].description} />
-            <NewComment />
-            <CommentItems
-              comments={currentVideo[0].comments}
-              currentVideo={this.state.currentVideoId}
-            />
+            <div className="leftDivider">
+              <VideoInfo currentVideo={this.state.currentVideoInfo} />
+              <Description
+                description={this.state.currentVideoInfo.description}
+                currentVideo={this.state.currentVideoInfo}
+              />
+              <NewComment />
+              <CommentItems
+                comments={this.state.currentVideoInfo.comments}
+                currentVideo={this.state.currentVideoId}
+              />
+            </div>
+            <div className="grandVideoContainer">
+              <NextVideoTitle />
+              <VideoList
+                video={this.state.nextVideo}
+                handleChange={this.handleChange}
+                currentVideo={this.state.currentVideoId}
+              />
+            </div>
           </div>
-          <div className="grandVideoContainer">
-            <NextVideoTitle />
-            <VideoList
-              video={this.state.nextVideo}
-              handleChange={this.handleChange}
-              currentVideo={this.state.currentVideoId}
-            /> */}
-          </div>
-        </div>
-      </div>
+        ) : (
+          <h1>You played yourself.</h1>
+        )}
+      </>
     );
   }
 }

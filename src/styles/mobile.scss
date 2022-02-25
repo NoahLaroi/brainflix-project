@@ -220,7 +220,7 @@ form {
 }
 label {
   color: $Silver;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
   size: 12px;
   font-family: Avenir Next;
 }
@@ -277,7 +277,7 @@ label {
 .postedCommentBox {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 16px;
+  margin: 0 16px;
 }
 .nameText {
   width: 70%;
@@ -410,6 +410,8 @@ label {
   color: $Brain-Flix-Blue;
   font-weight: 600;
   margin: 16px;
+  height: 32px;
+  border-radius: 5px;
 }
 
 .bottomButtonContainer {

@@ -260,7 +260,7 @@ form {
 
 label {
   color: #afafaf;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
   size: 12px;
   font-family: Avenir Next;
 }
@@ -337,7 +337,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-left: 16px;
+  margin: 0 16px;
 }
 
 .nameText {
@@ -512,6 +512,8 @@ label {
   color: #0095ff;
   font-weight: 600;
   margin: 16px;
+  height: 32px;
+  border-radius: 5px;
 }
 
 .bottomButtonContainer {

@@ -2,4 +2,12 @@ html {
   font-family: Avenir Next;
   color: #323232;
   font-size: 13px;
+}
+
+.publishButton:hover {
+  background-color: #0065ad;
+}
+
+.cancelButton:hover {
+  background-color: #afafaf;
 }/*# sourceMappingURL=App.css.map */

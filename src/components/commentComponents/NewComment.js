@@ -1,14 +1,12 @@
-import { Component } from "react";
 import React from "react";
 import AntiMohan from "../headerComponents/AntiMohan";
 import Mohan from "../headerComponents/Mohan";
+import PostedComments from "./PostedComments";
 
 class NewComment extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
+  handleClick = (event) => {
+    event.preventDefault();
+  };
   render() {
     return (
       <section className="newCommentSectionContainer">
@@ -30,7 +28,9 @@ class NewComment extends React.Component {
               ></textarea>
             </div>
             <div className="buttonContainer">
-              <button className="commentButton">COMMENT</button>
+              <button className="commentButton" onClick={this.handleClick}>
+                COMMENT
+              </button>
             </div>
           </form>
         </div>

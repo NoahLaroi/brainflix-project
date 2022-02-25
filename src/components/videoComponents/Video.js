@@ -1,6 +1,5 @@
 import PlayerButtons from "./PlayerButtons";
 export default function Video(props) {
-  // console.log(props.currentVideo[0].image);
   return (
     <section className="videoSection">
       <video
