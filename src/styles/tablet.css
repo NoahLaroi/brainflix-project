@@ -74,6 +74,12 @@
 
   .videoSection {
     margin: 0;
+    height: 400px;
+  }
+
+  .videoDisplay {
+    height: 100%;
+    width: 90%;
   }
 
   .bigContainer {

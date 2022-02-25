@@ -64,6 +64,11 @@ $desktop-lower: 1280px;
   // Video Section Styles
   .videoSection {
     margin: 0;
+    height: 400px;
+  }
+  .videoDisplay {
+    height: 100%;
+    width: 90%;
   }
   .bigContainer {
     margin: 0 32px;

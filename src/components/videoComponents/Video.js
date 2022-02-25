@@ -4,7 +4,7 @@ export default function Video(props) {
   return (
     <section className="videoSection">
       <video
-        poster={props.currentVideo[0].image}
+        poster={props.currentVideo.image}
         controls
         className="videoDisplay"
       >

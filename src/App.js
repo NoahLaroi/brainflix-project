@@ -33,9 +33,9 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Switch>
+        <Route path="/upload" component={UploaderPage} />
         <Route path="/" exact component={HomePage} />
         <Route path="/:id" component={HomePage} />
-        <Route path="/upload" component={UploaderPage} />
       </Switch>
     </BrowserRouter>
   );
@@ -43,44 +43,85 @@ export default function App() {
 
 class HomePage extends Component {
   //1. pass right information 2. change video details state based on id.
+  //Video Id ready for copy and pasting: 84e96018-4022-434e-80bf-000ce4cd12b8
   state = {
-    currentVideoId: "84e96018-4022-434e-80bf-000ce4cd12b8",
-    currentVideoInfo: VideoDetails,
+    currentVideoId: "",
+    currentVideoInfo: {
+      likes: "",
+      comments: [{ name: "", date: "", comment: "" }],
+      views: "",
+      channel: "",
+      title: "",
+    },
+    isLoading: false,
     nextVideo: [],
   };
 
   componentDidMount() {
+    this.setState({ isLoading: true });
     axios
       .get(`https://project-2-api.herokuapp.com/videos/?api_key=${API_KEY}`)
       .then((res) => {
-        this.setState({ nextVideo: res.data });
+        this.setState({
+          nextVideo: res.data,
+          currentVideoId: res.data[0].id,
+        });
+        console.log(res.data[0].id);
       });
   }
-
-  componentDidUpdate() {
-    // axios
-    //   .get(
-    //     "https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=f3a0830a-f1dd-4ad8-91f6-eebaae1aa1ec"
-    //   )
-    //   .then((res) => {
-    //     this.setState({ currentVideoId: res });
-    //     console.log(res);
-    //   });
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.currentVideoId !== prevState.currentVideoId) {
+      axios
+        .get(
+          `https://project-2-api.herokuapp.com/videos/${this.state.currentVideoId}?api_key=${API_KEY}`
+        )
+        .then((res) => {
+          console.log(res);
+          this.setState({ currentVideoInfo: res.data });
+          console.log(res);
+        });
+    }
   }
   //Allows me to get the current video Id of the Id that I click on.
   handleChange = (id) => {
     this.setState({ currentVideoId: id });
   };
   render() {
-    const currentVideo = this.state.currentVideoInfo.filter((video) => {
-      return video.id === this.state.currentVideoId;
-    });
+    console.log(this.state.currentVideoInfo);
     return (
       <div>
-        <Video id={this.state.currentVideoId} currentVideo={currentVideo} />
+        {/* <Video id={this.state.currentVideoId} currentVideo={currentVideo} /> */}
         <div className="grandDivider">
           <div className="leftDivider">
-            <VideoInfo
+            {this.state.isLoading ? (
+              <>
+                <Video
+                  id={this.state.currentVideoId}
+                  currentVideo={this.state.currentVideoInfo}
+                />
+                <VideoInfo currentVideo={this.state.currentVideoInfo} />
+                <Description
+                  description={this.state.currentVideoInfo.description}
+                />
+                <NewComment />
+                <CommentItems
+                  comments={this.state.currentVideoInfo.comments}
+                  currentVideo={this.state.currentVideoId}
+                />
+                <div className="grandVideoContainer">
+                  <NextVideoTitle />
+                  <VideoList
+                    video={this.state.nextVideo}
+                    handleChange={this.handleChange}
+                    currentVideo={this.state.currentVideoId}
+                  />
+                </div>
+              </>
+            ) : (
+              <h1>You played yourself.</h1>
+            )}
+
+            {/* <VideoInfo
               likes={currentVideo[0].likes}
               views={currentVideo[0].views}
               channel={currentVideo[0].channel}
@@ -99,7 +140,7 @@ class HomePage extends Component {
               video={this.state.nextVideo}
               handleChange={this.handleChange}
               currentVideo={this.state.currentVideoId}
-            />
+            /> */}
           </div>
         </div>
       </div>
