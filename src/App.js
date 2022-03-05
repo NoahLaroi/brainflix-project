@@ -56,6 +56,7 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
+    console.log("hi bud");
     this.setState({ isLoading: true });
     axios
       .get(`https://project-2-api.herokuapp.com/videos/?api_key=${API_KEY}`)
