@@ -56,25 +56,25 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
-    console.log("hi bud");
     this.setState({ isLoading: true });
-    axios
-      .get(`https://project-2-api.herokuapp.com/videos/?api_key=${API_KEY}`)
-      .then((res) => {
-        this.setState({
-          nextVideo: res.data,
-          currentVideoId: res.data[0].id,
-        });
+    axios.get("http://localhost:9000/videos/").then((res) => {
+      console.log(res.data[0].id);
+      this.setState({
+        nextVideo: res.data,
+        currentVideoId: res.data[0].id,
       });
+    });
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.state.currentVideoId !== prevState.currentVideoId) {
       axios
         .get(
-          `https://project-2-api.herokuapp.com/videos/${this.state.currentVideoId}?api_key=${API_KEY}`
+          `http://localhost:9000/videos/${this.state.currentVideoId}`
+          // `https://project-2-api.herokuapp.com/videos/${this.state.currentVideoId}?api_key=${API_KEY}`
         )
         .then((res) => {
-          this.setState({ currentVideoInfo: res.data });
+          this.setState({ currentVideoInfo: res.data[0] });
+          console.log(res.data[0]);
         });
       // } else if (this.state.currentVideoId === prevState.currentVideoId) {
       //   this.state.nextVideo.length > 0 &&
