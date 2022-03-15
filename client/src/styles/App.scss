@@ -26,3 +26,10 @@ html {
 .logoContainer:hover {
   background-color: $Silver;
 }
+.titleInput {
+  resize: none;
+  background-color: #fafafa;
+  font-family: "Avenir Next";
+  border-color: #afafaf;
+  border-radius: 5px;
+}

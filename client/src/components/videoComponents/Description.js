@@ -1,4 +1,3 @@
-import videoDetails from "../../data/video-details.json";
 function VideoDescription(props) {
   return (
     <section className="videoDescriptionSection">
