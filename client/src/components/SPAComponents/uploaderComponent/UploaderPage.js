@@ -21,6 +21,7 @@ export default class UploaderPage extends React.Component {
       .post("http://localhost:9000/videos", {
         title: this.state.title,
         description: this.state.description,
+        image: process.env.PUBLIC_URL + "/images/Upload-video-preview.jpg",
       })
       .then(function (res) {
         console.log(res);

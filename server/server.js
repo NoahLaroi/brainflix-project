@@ -55,17 +55,18 @@ app.use(function (req, res, next) {
 
 app.post("/videos", (req, res) => {
   console.log(req.body);
-  const { title, description } = req.body;
+  const { title, description, image } = req.body;
   const newVideo = {
     id: uuidv4(),
     title: title,
     channel: "The Tread Factory",
     video: "Upload-video-preview.jpg",
     description: description,
-    timestamp: Date.now(),
+    image: image,
+    timestamp: new Date(),
     likes: 0,
     views: 0,
-    comment: [{ name: "", date: "", comment: "" }],
+    comments: [{ name: "", date: "", comment: "" }],
   };
   console.log(videoDetails);
   const updatedVideoDetails = [...videoDetails, newVideo];
